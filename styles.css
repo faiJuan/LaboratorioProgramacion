@@ -7,7 +7,7 @@ h1 {
 
 
 body {
-  background-image: url('conoMejorado.png');
+  background-image: url('fondo.png');
   /* puede ser local o URL */
   background-size: cover;
   /* ajusta la imagen al tamaño de la pantalla */
