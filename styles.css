@@ -7,7 +7,7 @@ h1{
 
 
 body {
-  background-image: url('texturaCono2.jpg'); /* puede ser local o URL */
+  background-image: url('cono4.png'); /* puede ser local o URL */
   background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
   background-position: center;  /* centra la imagen */
   background-repeat: no-repeat; /* evita que se repita */
