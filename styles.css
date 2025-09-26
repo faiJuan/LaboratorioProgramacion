@@ -1,13 +1,13 @@
-h1{
-    font-style: italic;
-    font-size: 100px;
-    color:rgb(54, 31, 205) ;
-    text-align: center;
+h1 {
+  font-style: italic;
+  font-size: 100px;
+  color: rgb(54, 31, 205);
+  text-align: center;
 }
 
 
 body {
-  background-image: url('texturaCono3.png'); /* puede ser local o URL */
+  background-image: url('fondo.png'); /* puede ser local o URL */
   background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
   background-position: center;  /* centra la imagen */
   background-repeat: no-repeat; /* evita que se repita */
