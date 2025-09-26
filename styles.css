@@ -1,0 +1,17 @@
+h1{
+    font-style: italic;
+    font-size: 100px;
+    color:rgb(54, 31, 205) ;
+    text-align: center;
+}
+
+
+
+section{
+   background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 192, 203));
+   height: 100vh;
+}
+
+.fondo{
+    background-image: url(./C:\Users\j123r\OneDrive\Documentos\Proyectos\facultad\Gelato\texturaCono.jpg);
+}
