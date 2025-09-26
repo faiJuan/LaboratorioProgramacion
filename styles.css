@@ -6,12 +6,9 @@ h1{
 }
 
 
-
-section{
-   background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 192, 203));
-   height: 100vh;
-}
-
-.fondo{
-    background-image: url(./C:\Users\j123r\OneDrive\Documentos\Proyectos\facultad\Gelato\texturaCono.jpg);
+body {
+  background-image: url('texturaCono.jpg'); /* puede ser local o URL */
+  background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat; /* evita que se repita */
 }
