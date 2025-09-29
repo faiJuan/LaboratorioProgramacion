@@ -6,20 +6,55 @@ h1 {
 }
 
 header {
-  background-image: url('header.png'); /* puede ser local o URL */
-  background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
-  background-position: center;  /* centra la imagen */
-  background-repeat: repeat; /* se repite */
+  background-image: url('header.png');
+  /* puede ser local o URL */
+  background-size: cover;
+  /* ajusta la imagen al tamaño de la pantalla */
+  background-position: center;
+  /* centra la imagen */
+  background-repeat: repeat;
+  /* se repite */
   height: 130px;
 }
 
 body {
-  background: rgb(252, 245, 236);  /*rgba (a,b,c,0.6) para poder modificar la opacidad*/
-  background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
-  background-position: center;  /* centra la imagen */
-  background-repeat: repeat; /* evita que se repita */
+  background: rgb(252, 245, 236);
+  /*rgba (a,b,c,0.6) para poder modificar la opacidad*/
+  background-size: cover;
+  /* ajusta la imagen al tamaño de la pantalla */
+  background-position: center;
+  /* centra la imagen */
+  background-repeat: repeat;
+  /* evita que se repita */
   margin: 0;
   padding: 0;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  /*controla el espacio entre las filas creadas*/
+  column-gap: 100px;
+  /*controla el espacio entre las columnas creadas*/
+  justify-content: center;
+  width: fit-content;
+  margin: 50px auto 0 auto;
+  /*para controlar los espacios exteriores del contenedor*/
+  max-width: 1400px;
+}
+
+.cuadro {
+  flex: 0 0 calc(50% - 80px);
+  width: 620px;
+  height: 350px;
+  background-color: #ffe8ee;
+  border: 2px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
 
 .boton {
@@ -33,4 +68,3 @@ font-family: 'Helvetica', sans-serif; /*tipografía texto*/
 border-radius: 50px; /*bordes redondos*/
 cursor: pointer;  /*cambia a la manito al pasar por encima*/
 }
-
