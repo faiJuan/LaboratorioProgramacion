@@ -1,18 +1,26 @@
 h1 {
-  font-style: italic;
   font-size: 100px;
-  color: rgb(54, 31, 205);
-  text-align: center;
+  font-family: Broadway, sans-serif;
+  color: rgb(230, 161, 165);
+  text-align: left;
 }
 
-
-body {
-  background-image: url('fondo.png'); /* puede ser local o URL */
+header {
+  background-image: url('header.png'); /* puede ser local o URL */
   background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
   background-position: center;  /* centra la imagen */
-  background-repeat: no-repeat; /* evita que se repita */
+  background-repeat: repeat; /* se repite */
+  height: 130px;
 }
 
+body {
+  background: rgb(252, 245, 236);  /*rgba (a,b,c,0.6) para poder modificar la opacidad*/
+  background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
+  background-position: center;  /* centra la imagen */
+  background-repeat: repeat; /* evita que se repita */
+  margin: 0;
+  padding: 0;
+}
 
 .boton {
 border: 1px solid #2e518b; /*anchura, estilo y color borde*/
