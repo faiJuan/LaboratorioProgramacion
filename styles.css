@@ -1,20 +1,23 @@
 h1 {
-  /*font-style: italic;*/ 
   font-size: 100px;
-  font-family: Garamond, serif;
+  font-family: Broadway, sans-serif;
   color: rgb(230, 161, 165);
-  text-align: center;
+  text-align: left;
 }
 
 header {
-  background: rgb(243, 222, 170);  /*rgba (a,b,c,0.6) para poder modificar la opacidad*/
-  padding: 0px;
-  height: 100px;
+  background-image: url('header.png'); /* puede ser local o URL */
+  background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
+  background-position: center;  /* centra la imagen */
+  background-repeat: repeat; /* se repite */
+  height: 130px;
 }
 
 body {
-  background: rgb(252, 245, 236); /* puede ser local o URL */
+  background: rgb(252, 245, 236);  /*rgba (a,b,c,0.6) para poder modificar la opacidad*/
   background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
   background-position: center;  /* centra la imagen */
   background-repeat: repeat; /* evita que se repita */
+  margin: 0;
+  padding: 0;
 }
