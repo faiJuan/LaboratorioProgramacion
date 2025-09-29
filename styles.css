@@ -1,5 +1,5 @@
 h1 {
-  /*font-style: italic;*/ 
+  /*font-style: italic;*/
   font-size: 100px;
   font-family: Garamond, serif;
   color: rgb(230, 161, 165);
@@ -7,14 +7,46 @@ h1 {
 }
 
 header {
-  background: rgb(243, 222, 170);  /*rgba (a,b,c,0.6) para poder modificar la opacidad*/
+  background: rgb(243, 222, 170);
+  /*rgba (a,b,c,0.6) para poder modificar la opacidad*/
   padding: 0px;
   height: 100px;
 }
 
 body {
-  background: rgb(252, 245, 236); /* puede ser local o URL */
-  background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
-  background-position: center;  /* centra la imagen */
-  background-repeat: repeat; /* evita que se repita */
+  background: rgb(252, 245, 236);
+  /* puede ser local o URL */
+  background-size: cover;
+  /* ajusta la imagen al tamaño de la pantalla */
+  background-position: center;
+  /* centra la imagen */
+  background-repeat: repeat;
+  /* evita que se repita */
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  /*controla el espacio entre las filas creadas*/
+  column-gap: 100px;
+  /*controla el espacio entre las columnas creadas*/
+  justify-content: center;
+  width: fit-content;
+  margin: 50px auto 0 auto;
+  /*para controlar los espacios exteriores del contenedor*/
+  max-width: 1400px;
+}
+
+.cuadro {
+  flex: 0 0 calc(50% - 80px);
+  width: 620px;
+  height: 350px;
+  background-color: #ffe8ee;
+  border: 2px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
