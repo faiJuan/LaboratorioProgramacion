@@ -1,14 +1,20 @@
 h1 {
-  font-style: italic;
+  /*font-style: italic;*/ 
   font-size: 100px;
-  color: rgb(54, 31, 205);
+  font-family: Garamond, serif;
+  color: rgb(230, 161, 165);
   text-align: center;
 }
 
+header {
+  background: rgb(243, 222, 170);  /*rgba (a,b,c,0.6) para poder modificar la opacidad*/
+  padding: 0px;
+  height: 100px;
+}
 
 body {
-  background-image: url('fondo.png'); /* puede ser local o URL */
+  background: rgb(252, 245, 236); /* puede ser local o URL */
   background-size: cover;       /* ajusta la imagen al tamaño de la pantalla */
   background-position: center;  /* centra la imagen */
-  background-repeat: no-repeat; /* evita que se repita */
+  background-repeat: repeat; /* evita que se repita */
 }
