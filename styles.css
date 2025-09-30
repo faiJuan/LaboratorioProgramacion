@@ -53,19 +53,66 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  /* apila el título y el contenido */
+  padding: 20px;
+  box-sizing: border-box;
+  /*Importante para que padding y border no sumen ancho, haciendo que los cuadros no sean mas anchos de lo debido.*/
+  gap: 15px;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
+/* Título */
+.cuadro .titulo {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Contenido de imagen + info */
+.cuadro .contenido {
+  display: flex;
+  flex-direction: row;
+  /* imagen a la izquierda, info a la derecha */
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Imagen */
+.cuadro .imagen {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Lista de información */
+.cuadro .info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
 
 .boton {
-border: 1px solid #2e518b; /*anchura, estilo y color borde*/
-padding: 10px; /*espacio alrededor texto*/
-background-color: #2e518b; /*color botón*/
-color: #ffffff; /*color texto*/
-text-decoration: none; /*decoración texto*/
-text-transform: uppercase; /*capitalización texto*/
-font-family: 'Helvetica', sans-serif; /*tipografía texto*/
-border-radius: 50px; /*bordes redondos*/
-cursor: pointer;  /*cambia a la manito al pasar por encima*/
+  border: 1px solid #2e518b;
+  /*anchura, estilo y color borde*/
+  padding: 10px;
+  /*espacio alrededor texto*/
+  background-color: #2e518b;
+  /*color botón*/
+  color: #ffffff;
+  /*color texto*/
+  text-decoration: none;
+  /*decoración texto*/
+  text-transform: uppercase;
+  /*capitalización texto*/
+  font-family: 'Helvetica', sans-serif;
+  /*tipografía texto*/
+  border-radius: 50px;
+  /*bordes redondos*/
+  cursor: pointer;
+  /*cambia a la manito al pasar por encima*/
 }
