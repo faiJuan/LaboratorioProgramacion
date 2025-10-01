@@ -20,7 +20,7 @@ header {
   background-size: cover;      
   background-position: center;  
   background-repeat: repeat;
-  height: 100px;
+  height: 108px; /*pixeles o vh?*/
 }
 
 body {
@@ -38,9 +38,12 @@ body {
 
 .Gelato {
   display: flex;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
 }
 
+nav {
+  padding: 0px 5px 0px 0px;
+}
 
 nav ul {
   display: flex;
@@ -105,7 +108,8 @@ nav a:hover {
   height: 350px;
   /*background-image: url('opcion.png');*/
   background-color: rgb(232,208,166);
-  border: 4px rgb(224,198,147);
+  border: 8px solid rgb(224, 198, 147);
+  /*border: 8px solid #e90b7ae8;*/
   display: flex;
   align-items: flex-start; /*alinea los item a al inicio de donde comienza el eje transversal, osea la izquierda*/
   justify-content: center;
@@ -119,14 +123,13 @@ nav a:hover {
 
 .cuadro .titulo {
   align-self: center; /*se auto alinea en el centro del eje del flex, ya que los otros van a la izq*/
-  font-size: 24px;
+  font-size: 25px;
   text-align: center;
   margin: 0;
 }
 
 .cuadro .contenido {
   display: flex;
-  flex-direction: row;
   align-items: left;
   text-align: left;
   gap: 20px;
@@ -135,7 +138,7 @@ nav a:hover {
 .cuadro .imagen {
   margin: auto;
   width: 150px;
-  height: auto;
+  height: 150px;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
@@ -143,22 +146,32 @@ nav a:hover {
 
 .cuadro .info {
   list-style-type:none;
-  padding: 0;
+  padding: 5px;
   margin: 0;
   font-size: 16px;
   font-weight: normal;
   text-align: left;
 }
 
+.cuadro .info li {
+  padding-bottom: 8px;
+}
+
 .boton {
   display: inline-block;
-  border: 1px solid #e90b7ae8;
-  padding: 10px;
-  background-color: #f801b6;
+  padding: 5px;
+  background-color: rgb(230, 161, 165);
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Helvetica', sans-serif;
+  font-family: Tahoma, sans-serif;
   border-radius: 12px;
   cursor: pointer;/*cambia a la manito al pasar por encima*/
+  align-self: center;
+  width: 90px;
+  text-align: center;
+}
+
+.boton:hover {
+  background-color: rgb(204, 115, 120); 
 }
