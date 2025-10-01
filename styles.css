@@ -6,6 +6,12 @@ h1 {
   margin: 0px;
 }
 
+h2 {  
+  font-family: 'Arial Black', sans-serif;
+  color: #5ebcff;
+  text-align: center;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -85,14 +91,11 @@ nav a:hover {
 .contenedor {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 50px;
-  /*controla el espacio entre las filas creadas*/
-  column-gap: 100px;
-  /*controla el espacio entre las columnas creadas*/
+  row-gap: 50px; /*controla el espacio entre las filas creadas*/
+  column-gap: 100px; /*controla el espacio entre las columnas creadas*/
   justify-content: center;
   width: fit-content;
-  margin: 50px auto 0 auto;
-  /*para controlar los espacios exteriores del contenedor*/
+  margin: 50px auto 0 auto; /*para controlar los espacios exteriores del contenedor*/
   max-width: 1400px;
 }
 
@@ -104,29 +107,23 @@ nav a:hover {
   background-color: rgb(232,208,166);
   border: 4px rgb(224,198,147);
   display: flex;
-  align-items: flex-start;
-  /*alinea los item a al inicio de donde comienza el eje transversal, osea la izquierda*/
+  align-items: flex-start; /*alinea los item a al inicio de donde comienza el eje transversal, osea la izquierda*/
   justify-content: center;
-  flex-direction: column;
-  /* apila el título y el contenido */
+  flex-direction: column; /* apila el título y el contenido */
   padding: 20px;
-  box-sizing: border-box;
-  /*Importante para que padding y border no sumen ancho, haciendo que los cuadros no sean mas anchos de lo debido.*/
+  box-sizing: border-box; /*Importante para que padding y border no sumen ancho, haciendo que los cuadros no sean mas anchos de lo debido.*/
   gap: 15px;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
-/* Título */
 .cuadro .titulo {
-  align-self: center;
-  /*se auto alinea en el centro del eje del flex, ya que los otros van a la izq*/
+  align-self: center; /*se auto alinea en el centro del eje del flex, ya que los otros van a la izq*/
   font-size: 24px;
   text-align: center;
   margin: 0;
 }
 
-/* Contenido de imagen + info */
 .cuadro .contenido {
   display: flex;
   flex-direction: row;
@@ -135,7 +132,6 @@ nav a:hover {
   gap: 20px;
 }
 
-/* Imagen */
 .cuadro .imagen {
   margin: auto;
   width: 150px;
@@ -145,7 +141,6 @@ nav a:hover {
   flex-shrink: 0;
 }
 
-/* Lista de información */
 .cuadro .info {
   list-style-type:none;
   padding: 0;
@@ -153,33 +148,17 @@ nav a:hover {
   font-size: 16px;
   font-weight: normal;
   text-align: left;
-  
 }
 
 .boton {
   display: inline-block;
   border: 1px solid #e90b7ae8;
-  /*anchura, estilo y color borde*/
   padding: 10px;
-  /*espacio alrededor texto*/
   background-color: #f801b6;
-  /*color botón*/
   color: #ffffff;
-  /*color texto*/
   text-decoration: none;
-  /*decoración texto*/
   text-transform: uppercase;
-  /*capitalización texto*/
   font-family: 'Helvetica', sans-serif;
-  /*tipografía texto*/
   border-radius: 12px;
-  /*bordes redondos*/
-  cursor: pointer;
-  /*cambia a la manito al pasar por encima*/
-}
-
-h2 {  
-  font-family: 'Arial Black', sans-serif;
-  color: #5ebcff;
-  text-align: center;
+  cursor: pointer;/*cambia a la manito al pasar por encima*/
 }
