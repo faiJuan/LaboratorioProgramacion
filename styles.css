@@ -48,10 +48,12 @@ body {
   flex: 0 0 calc(50% - 80px);
   width: 620px;
   height: 350px;
-  background-color: #ffe8ee;
-  border: 2px solid #000000;
+  /*background-image: url('opcion.png');*/
+  background-color: rgb(232,208,166);
+  border: 4px rgb(224,198,147);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  /*alinea los item a al inicio de donde comienza el eje transversal, osea la izquierda*/
   justify-content: center;
   flex-direction: column;
   /* apila el título y el contenido */
@@ -65,6 +67,8 @@ body {
 
 /* Título */
 .cuadro .titulo {
+  align-self: center;
+  /*se auto alinea en el centro del eje del flex, ya que los otros van a la izq*/
   font-size: 24px;
   text-align: center;
   margin: 0;
@@ -74,34 +78,39 @@ body {
 .cuadro .contenido {
   display: flex;
   flex-direction: row;
-  /* imagen a la izquierda, info a la derecha */
-  align-items: flex-start;
+  align-items: left;
+  text-align: left;
   gap: 20px;
 }
 
 /* Imagen */
 .cuadro .imagen {
+  margin: auto;
   width: 150px;
-  height: 150px;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
+  flex-shrink: 0;
 }
 
 /* Lista de información */
 .cuadro .info {
-  list-style: none;
+  list-style-type:none;
   padding: 0;
   margin: 0;
   font-size: 16px;
   font-weight: normal;
+  text-align: left;
+  
 }
 
 .boton {
-  border: 1px solid #2e518b;
+  display: inline-block;
+  border: 1px solid #e90b7ae8;
   /*anchura, estilo y color borde*/
   padding: 10px;
   /*espacio alrededor texto*/
-  background-color: #2e518b;
+  background-color: #f801b6;
   /*color botón*/
   color: #ffffff;
   /*color texto*/
@@ -111,8 +120,14 @@ body {
   /*capitalización texto*/
   font-family: 'Helvetica', sans-serif;
   /*tipografía texto*/
-  border-radius: 50px;
+  border-radius: 12px;
   /*bordes redondos*/
   cursor: pointer;
   /*cambia a la manito al pasar por encima*/
+}
+
+h2 {  
+  font-family: 'Arial Black', sans-serif;
+  color: #5ebcff;
+  text-align: center;
 }
