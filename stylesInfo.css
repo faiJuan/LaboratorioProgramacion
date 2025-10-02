@@ -173,3 +173,13 @@ section {
   text-align: justify;
   margin: 20px;
 }
+
+.Contactos {
+  display: flex;
+  margin: 10px;
+  font-size: 16px;
+  list-style-type: none;
+  padding: 2px;
+  align-items: center;
+  justify-content: space-evenly;
+}
