@@ -76,7 +76,6 @@ nav a {
   cursor: pointer; 
   border: none; 
   border-radius: 12px; 
-  align-items: center;
 }
 
 nav a:hover {
