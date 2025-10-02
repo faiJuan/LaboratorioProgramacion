@@ -122,6 +122,14 @@ nav a:hover {
   border-radius: 15px 50px;
 }
 
-.sabores {
-    
+.mapa {
+  height: auto;
+  width: 250px;
+  border-radius: 50px;
+  padding: 1px;
+  transition: transform 0.5s linear;
+}
+
+.mapa:hover {   
+  transform: scale(1.30);
 }
