@@ -155,9 +155,9 @@ nav a:hover {
   list-style-type:none;
   padding: 5px;
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Century Gothic', sans-serif;
   text-align: left;
   align-self: center;
 }

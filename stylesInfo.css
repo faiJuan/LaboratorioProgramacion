@@ -1,15 +1,19 @@
 h1 {
   font-size: 70px;
-  font-family: Broadway, sans-serif;
+  font-family: 'Broadway', sans-serif;
+    font-weight: lighter;
   color: rgb(230, 161, 165);
   text-align: left;
   margin: 0px;
 }
 
 h2 {  
-  font-family: 'Arial Black', sans-serif;
-  color: #5ebcff;
+  font-family:'Showcard Gothic', sans-serif;
+  font-weight: lighter;
+  color: rgb(119, 172, 230);
   text-align: center;
+  font-size: 50px;
+  margin: 20px;
 }
 
 header {
@@ -94,26 +98,27 @@ nav a:hover {
   display: flex;
   height: 100%;
   column-gap: 80px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px 0px 20px 0px;
+  padding: 25px 10px 25px 10px;
+  background-color: rgb(217, 181, 143);
 }
 
 .imagen {
-  height: 300px;
-  width: auto;
+  height: auto;
+  width: 250px;
   border-radius: 50px;
-  background-color: black;
   padding: 1px;
 }
 
 .informacion {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 20px;
   text-align: justify;
-  background-color: #f0f0f0;
+  background-color: rgb(232, 205, 175);
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 15px 50px;
 }
 
