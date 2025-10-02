@@ -1,14 +1,16 @@
 h1 {
   font-size: 70px;
-  font-family: Broadway, sans-serif;
+  font-family: 'Broadway', sans-serif;
+  font-weight: lighter;
   color: rgb(230, 161, 165);
   text-align: left;
   margin: 0px;
 }
 
 h2 {  
-  font-family: 'Arial Black', sans-serif;
-  color: #5ebcff;
+  font-family: 'Showcard Gothic', sans-serif;
+  font-weight: lighter;
+  color: rgb(119, 172, 230);
   text-align: center;
 }
 
@@ -94,18 +96,18 @@ nav a:hover {
 .contenedor {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 50px; /*controla el espacio entre las filas creadas*/
-  column-gap: 100px; /*controla el espacio entre las columnas creadas*/
+  row-gap: 60px; /*controla el espacio entre las filas creadas*/
+  column-gap: 60px; /*controla el espacio entre las columnas creadas*/
   justify-content: center;
   width: fit-content;
-  margin: 50px auto 0 auto; /*para controlar los espacios exteriores del contenedor*/
+  margin: 50px auto 50px auto; /*para controlar los espacios exteriores del contenedor*/
   max-width: 1400px;
 }
 
 .cuadro {
   flex: 0 0 calc(50% - 80px);
   width: 620px;
-  height: 350px;
+  height: 300px;
   /*background-image: url('opcion.png');*/
   background-color: rgb(232,208,166);
   border: 8px solid rgb(224, 198, 147);
@@ -119,6 +121,11 @@ nav a:hover {
   gap: 15px;
   color: rgb(0, 0, 0);
   font-weight: bold;
+}
+
+.cuadro:hover {
+  border-color: rgb(199, 171, 115);
+  transform: scale(1.02); /*agranda un poco el cuadro al pasar por encima*/
 }
 
 .cuadro .titulo {
@@ -150,14 +157,16 @@ nav a:hover {
   margin: 0;
   font-size: 16px;
   font-weight: normal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: left;
+  align-self: center;
 }
 
 .cuadro .info li {
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 
-.boton {
+.botonInfo {
   display: inline-block;
   padding: 5px;
   background-color: rgb(230, 161, 165);
@@ -167,11 +176,24 @@ nav a:hover {
   font-family: Tahoma, sans-serif;
   border-radius: 12px;
   cursor: pointer;/*cambia a la manito al pasar por encima*/
-  align-self: center;
   width: 90px;
+  align-self: center;
   text-align: center;
 }
 
-.boton:hover {
+.botonInfo:hover {
   background-color: rgb(204, 115, 120); 
+  transform: scaleX(1.05);
+}
+
+#Abierto{
+  font-weight: bold;
+  font-style: italic;
+  color: green;
+}
+
+#Cerrado{
+  font-weight: bold;
+  font-style: italic;
+  color: red
 }
