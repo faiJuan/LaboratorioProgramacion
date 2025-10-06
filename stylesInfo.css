@@ -140,7 +140,7 @@ section {
 }
 
 #Sec1 {
-  height: 90vh;
+  height: 85vh;
 }
 
 #Sec2 {
@@ -203,7 +203,7 @@ section {
   font-size: 20px;
   text-align: justify;
   margin: 15px;
-  max-width: 800px;
+  max-width: 80vw;
   background-color: rgb(232, 205, 175);
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
