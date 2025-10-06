@@ -24,7 +24,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('imagenes/headerO2.png');
+  background-image: url('imagenes/header.png');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -139,6 +139,15 @@ section {
   text-align: center;
 }
 
+section ul {
+  margin: 15px;
+  padding: 0px;
+}
+
+ul ::marker {
+  color: rgb(119, 172, 230);
+}
+
 #Sec1 {
   height: 85vh;
 }
@@ -184,13 +193,13 @@ section {
   padding: 0px 3px;
 }
 
-.C{
+.C {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.Resenias {
+.ContenedorResenias {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,14 +207,23 @@ section {
   padding: 10px;
 }
 
-.Resenia{
+.Resenia {
   font-family: 'Century Gothic', sans-serif;
   font-size: 20px;
   text-align: justify;
   margin: 15px;
-  max-width: 80vw;
+  width: 80vw;
   background-color: rgb(232, 205, 175);
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 15px 50px;
+}
+
+.ReseniaCliente {
+  width: 75vw;
+  height: 100px;
+  background-color: whitesmoke;
+  border: 8px solid antiquewhite;
+  font-family: 'Century Gothic', sans-serif;
+  text-align: left;
+  margin: 15px;
 }
