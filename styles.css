@@ -7,9 +7,10 @@ h1 {
   margin: 0px;
 }
 
-h2 {  
-  font-family: 'Showcard Gothic', sans-serif;
-  font-weight: lighter;
+h2 {
+  font-size: 36px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
   color: rgb(119, 172, 230);
   text-align: center;
 }
@@ -18,11 +19,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('imagenes/headerO2.png'); 
-  background-size: cover;      
-  background-position: center;  
+  background-image: url('imagenes/headerO2.png');
+  background-size: cover;
+  background-position: center;
   background-repeat: repeat;
-  height: 108px; /*pixeles o vh?*/
+  height: 108px;
 }
 
 body {
@@ -32,19 +33,17 @@ body {
 }
 
 .Logo {
-  display: flex;
   height: 70px;
-  width: auto; 
+  width: auto;
   padding: 0px 10px 0px 10px;
 }
 
 .Gelato {
-  display: flex;
   margin: 0px;
 }
 
 nav {
-  padding: 0px 5px 0px 0px;
+  padding: 0px 5px 0px 5px;
 }
 
 nav ul {
@@ -69,37 +68,40 @@ nav a {
   background-color: rgb(230, 161, 165);
   color: white;
   padding: 5px;
-  text-align: center; 
-  font-size: 16px; 
+  text-align: center;
+  font-size: 16px;
   text-decoration: none;
   font-family: Tahoma, sans-serif;
-  cursor: pointer; 
-  border: none; 
-  border-radius: 12px; 
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
 }
 
 nav a:hover {
-  background-color: rgb(204, 115, 120); 
+  background-color: rgb(204, 115, 120);
 }
 
 .ImagenCabecera {
   height: 22px;
-  width: auto; 
+  width: auto;
 }
 
 .Separador {
   display: flex;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .contenedor {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 60px; /*controla el espacio entre las filas creadas*/
-  column-gap: 60px; /*controla el espacio entre las columnas creadas*/
+  row-gap: 60px;
+  /*controla el espacio entre las filas creadas*/
+  column-gap: 60px;
+  /*controla el espacio entre las columnas creadas*/
   justify-content: center;
   width: fit-content;
-  margin: 50px auto 50px auto; /*para controlar los espacios exteriores del contenedor*/
+  margin: 50px auto 50px auto;
+  /*para controlar los espacios exteriores del contenedor*/
   max-width: 1400px;
 }
 
@@ -107,19 +109,17 @@ nav a:hover {
   flex: 0 0 calc(50% - 80px);
   width: 620px;
   height: 300px;
-  /*background-image: url('opcion.png');*/
-  /*background-color: rgb(232,208,166);
-  border: 8px solid rgb(224, 198, 147);*/
-
   background-color: rgb(232, 205, 175);
   border: 8px solid rgb(217, 181, 143);
-
   display: flex;
-  align-items: flex-start; /*alinea los item a al inicio de donde comienza el eje transversal, osea la izquierda*/
+  align-items: flex-start;
+  /*alinea los item a al inicio de donde comienza el eje transversal, osea la izquierda*/
   justify-content: center;
-  flex-direction: column; /* apila el título y el contenido */
+  flex-direction: column;
+  /* apila el título y el contenido */
   padding: 20px;
-  box-sizing: border-box; /*Importante para que padding y border no sumen ancho, haciendo que los cuadros no sean mas anchos de lo debido.*/
+  box-sizing: border-box;
+  /*Importante para que padding y border no sumen ancho, haciendo que los cuadros no sean mas anchos de lo debido.*/
   gap: 15px;
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -127,19 +127,18 @@ nav a:hover {
 
 .cuadro:hover {
   border-color: rgb(189, 160, 126);
-  transform: scale(1.02); /*agranda un poco el cuadro al pasar por encima*/
+  transform: scale(1.05);
 }
 
 .cuadro .titulo {
-  align-self: center; /*se auto alinea en el centro del eje del flex, ya que los otros van a la izq*/
-  font-size: 25px;
+  align-self: center;
+  /*se auto alinea en el centro del eje del flex, ya que los otros van a la izq*/
   text-align: center;
   margin: 0;
 }
 
 .cuadro .contenido {
   display: flex;
-  align-items: left;
   text-align: left;
   gap: 20px;
 }
@@ -154,7 +153,7 @@ nav a:hover {
 }
 
 .cuadro .info {
-  list-style-type:none;
+  list-style-type: none;
   padding: 5px;
   margin: 0;
   font-size: 18px;
@@ -177,24 +176,25 @@ nav a:hover {
   text-transform: uppercase;
   font-family: Tahoma, sans-serif;
   border-radius: 12px;
-  cursor: pointer;/*cambia a la manito al pasar por encima*/
+  cursor: pointer;
+  /*cambia a la manito al pasar por encima*/
   width: 90px;
   align-self: center;
   text-align: center;
 }
 
 .botonInfo:hover {
-  background-color: rgb(204, 115, 120); 
+  background-color: rgb(204, 115, 120);
   transform: scaleX(1.05);
 }
 
-#Abierto{
+#Abierto {
   font-weight: bold;
   font-style: italic;
   color: green;
 }
 
-#Cerrado{
+#Cerrado {
   font-weight: bold;
   font-style: italic;
   color: red

@@ -1,32 +1,32 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
 h1 {
   font-size: 70px;
   font-family: 'Broadway', sans-serif;
-    font-weight: lighter;
+  font-weight: lighter;
   color: rgb(230, 161, 165);
   text-align: left;
   margin: 0px;
 }
 
-h2 {  
-  font-family:'Showcard Gothic', sans-serif;
-  font-weight: lighter;
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
   color: rgb(119, 172, 230);
   text-align: center;
-  font-size: 50px;
-  margin: 20px;
+  font-size: 55px;
+  margin: 15px;
 }
 
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('imagenes/headerO2.png'); 
-  background-size: cover;      
-  background-position: center;  
+  background-image: url('imagenes/headerO2.png');
+  background-size: cover;
+  background-position: center;
   background-repeat: repeat;
   height: 108px;
 }
@@ -40,17 +40,14 @@ body {
 }
 
 .Logo {
-  display: flex;
   height: 70px;
-  width: auto; 
+  width: auto;
   padding: 0px 10px 0px 10px;
 }
 
 .Gelato {
-  display: flex;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
 }
-
 
 nav ul {
   display: flex;
@@ -74,28 +71,28 @@ nav a {
   background-color: rgb(230, 161, 165);
   color: white;
   padding: 5px;
-  text-align: center; 
-  font-size: 16px; 
+  text-align: center;
+  font-size: 16px;
   text-decoration: none;
   font-family: Tahoma, sans-serif;
-  cursor: pointer; 
-  border: none; 
-  border-radius: 12px; 
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
   align-items: center;
 }
 
 nav a:hover {
-  background-color: rgb(204, 115, 120); 
+  background-color: rgb(204, 115, 120);
 }
 
 .ImagenCabecera {
   height: 22px;
-  width: auto; 
+  width: auto;
 }
 
 .Separador {
   display: flex;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .organizador {
@@ -134,17 +131,21 @@ nav a:hover {
   transition: transform 0.5s linear;
 }
 
-.mapa:hover {   
+.mapa:hover {
   transform: scale(1.30);
 }
 
 section {
   text-align: center;
-  height: 700px;
+}
+
+#Sec1 {
+  height: 90vh;
 }
 
 #Sec2 {
-  background: rgb(252, 245, 236);
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .BotonSec {
@@ -152,26 +153,19 @@ section {
   background-color: rgb(230, 161, 165);
   color: white;
   padding: 5px 10px;
-  text-align: center; 
-  font-size: 25px; 
+  text-align: center;
+  font-size: 25px;
   text-decoration: none;
   font-family: Tahoma, sans-serif;
-  cursor: pointer; 
-  border: none; 
-  border-radius: 12px; 
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
   align-self: right;
 }
 
 .BotonSec:hover {
-  background-color: rgb(204, 115, 120); 
+  background-color: rgb(204, 115, 120);
   transform: scaleX(1.05);
-}
-
-#Sec2 p{
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 20px;
-  text-align: justify;
-  margin: 20px;
 }
 
 .Contactos {
@@ -182,4 +176,36 @@ section {
   padding: 2px;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.ContactosImg {
+  height: 20px;
+  width: auto;
+  padding: 0px 3px;
+}
+
+.C{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Resenias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.Resenia{
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  margin: 15px;
+  max-width: 800px;
+  background-color: rgb(232, 205, 175);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px 50px;
 }
