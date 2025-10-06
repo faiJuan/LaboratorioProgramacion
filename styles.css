@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('imagenes/headerO2.png');
+  background-image: url('imagenes/header.png');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
