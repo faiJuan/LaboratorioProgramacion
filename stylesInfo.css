@@ -219,11 +219,12 @@ ul ::marker {
 }
 
 .ReseniaCliente {
-  width: 75vw;
+  width: 80vw;
   height: 100px;
   background-color: whitesmoke;
   border: 8px solid antiquewhite;
   font-family: 'Century Gothic', sans-serif;
   text-align: left;
+  padding: 20px;
   margin: 15px;
 }
