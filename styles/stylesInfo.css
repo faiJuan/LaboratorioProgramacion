@@ -24,7 +24,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('imagenes/header.png');
+  background-image: url('../imagenes/header.png');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
