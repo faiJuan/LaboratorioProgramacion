@@ -26,6 +26,17 @@ header {
   height: 108px;
 }
 
+footer {
+  text-align: center;
+  padding: 4px;
+  background-color: rgb(232, 207, 202);
+  color: rgb(104, 85, 64);
+  font-family: Tahoma, sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
 body {
   background: rgb(252, 245, 236);
   margin: 0;
