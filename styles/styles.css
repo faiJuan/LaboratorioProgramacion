@@ -23,7 +23,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  height: 14vh;
+  min-height: 110px;
 }
 
 body {
