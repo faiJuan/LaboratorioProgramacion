@@ -1,27 +1,87 @@
 const contenedor = document.getElementById('principal');
+const paginacion = document.getElementById('paginacion');
 
+const HELADERIAS_POR_PAGINA = 4;   //Cantidad de heladerías por página
+let paginaActual = 1;              //Página que se está mostrando
+let heladeriasGlobal = [];         //Variable para guardar todas las heladerías
 
 fetch('./heladerias.json')
-  .then(response => response.json()) 
-  .then(heladerias => {
-    
-    for (const heladeria of heladerias) {
-    const nuevaH = document.createElement("div");
-    nuevaH.classList.add("cuadro");
-    nuevaH.innerHTML = `
-        <h2 class="titulo">${heladeria.nombre}</h2>
-        <div class="contenido">
-            <img src="${heladeria.logoUrl}" alt="logo ${heladeria.nombre}" class="imagen">
-            <ul class="info">
-                <li><b>Rango de precios:</b> ${heladeria.rangoPrecio}</li>
-                <li><b>Direccion:</b> ${heladeria.direccion}</li>
-                <li id="Abierto">Abierto</li>
-            </ul>
-        </div>
-        <a class="botonInfo" href="archivosHtml/${heladeria.nombre.split(' ').join('').toLowerCase()}Info.html" target="_blank">info</a>
-        </div>
+    .then(response => response.json())
+    .then(heladerias => {
+        heladeriasGlobal = heladerias;       //Guarda las heladerías completas en una variable
+        mostrarPagina(paginaActual);          //Muestra la página inicial
+        crearBotonesPaginacion(heladerias.length); //Para crear los botones de paginación
+    })
+    .catch(error => console.error('Error cargando el JSON:', error));
+
+//Función que muestra solo las heladerías correspondientes a una página
+function mostrarPagina(pagina) {
+    contenedor.innerHTML = ''; // Limpiar el contenedor
+
+    const inicio = (pagina - 1) * HELADERIAS_POR_PAGINA;
+    const fin = inicio + HELADERIAS_POR_PAGINA;
+    const heladeriasPagina = heladeriasGlobal.slice(inicio, fin);
+
+    for (const heladeria of heladeriasPagina) {
+        const nuevaH = document.createElement("div");
+        nuevaH.classList.add("cuadro");
+        nuevaH.innerHTML = `
+      <h2 class="titulo">${heladeria.nombre}</h2>
+      <div class="contenido">
+          <img src="${heladeria.logoUrl}" alt="logo ${heladeria.nombre}" class="imagen">
+          <ul class="info">
+              <li><b>Rango de precios:</b> ${heladeria.rangoPrecio}</li>
+              <li><b>Dirección:</b> ${heladeria.direccion}</li>
+              <li id="Abierto">Abierto</li>
+          </ul>
+      </div>
+      <a class="botonInfo" href="archivosHtml/${heladeria.nombre.split(' ').join('').toLowerCase()}Info.html" target="_blank">info</a>
     `;
-    document.getElementById("principal").appendChild(nuevaH);
+        contenedor.appendChild(nuevaH);
+    }
 }
-  })
-  .catch(error => console.error('Error cargando el JSON:', error));
+
+//Función que crea los botones de paginación y sus eventos
+function crearBotonesPaginacion(totalHeladerias) {
+    paginacion.innerHTML = '';
+    const totalPaginas = Math.ceil(totalHeladerias / HELADERIAS_POR_PAGINA);
+
+    // Botón "Anterior"
+    const btnAnterior = document.createElement('button');
+    btnAnterior.textContent = 'Anterior';
+    btnAnterior.disabled = paginaActual === 1;
+    btnAnterior.addEventListener('click', () => {
+        if (paginaActual > 1) {
+            paginaActual--;
+            mostrarPagina(paginaActual);
+            crearBotonesPaginacion(totalHeladerias);
+        }
+    });
+    paginacion.appendChild(btnAnterior);
+
+    // Botones numéricos de página
+    for (let i = 1; i <= totalPaginas; i++) {
+        const btn = document.createElement('button');
+        btn.textContent = i;
+        if (i === paginaActual) btn.disabled = true;
+        btn.addEventListener('click', () => {
+            paginaActual = i;
+            mostrarPagina(paginaActual);
+            crearBotonesPaginacion(totalHeladerias);
+        });
+        paginacion.appendChild(btn);
+    }
+
+    // Botón "Siguiente"
+    const btnSiguiente = document.createElement('button');
+    btnSiguiente.textContent = 'Siguiente';
+    btnSiguiente.disabled = paginaActual === totalPaginas;
+    btnSiguiente.addEventListener('click', () => {
+        if (paginaActual < totalPaginas) {
+            paginaActual++;
+            mostrarPagina(paginaActual);
+            crearBotonesPaginacion(totalHeladerias);
+        }
+    });
+    paginacion.appendChild(btnSiguiente);
+}
