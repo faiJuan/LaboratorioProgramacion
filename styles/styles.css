@@ -99,7 +99,8 @@ nav a:hover {
   column-gap: 60px;
   /*controla el espacio entre las columnas creadas*/
   justify-content: center;
-  width: fit-content;
+  width: %100;
+  /*fit-content;*/
   margin: 50px auto 50px auto;
   /*para controlar los espacios exteriores del contenedor*/
   max-width: 1400px;
