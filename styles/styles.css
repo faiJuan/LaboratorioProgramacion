@@ -216,6 +216,7 @@ button {
   border: 2px solid rgb(217, 181, 143);
   border-radius: 8px;
   font-weight: bold;
+  color: rgb(104, 85, 64);
 }
 
 button:hover {
