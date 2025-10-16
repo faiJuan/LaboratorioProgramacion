@@ -1,10 +1,11 @@
 h1 {
   font-size: 70px;
-  font-family: 'Broadway', sans-serif;
+  font-family: "Bagel Fat One", system-ui;
   font-weight: lighter;
   color: rgb(230, 161, 165);
   text-align: left;
   margin: 0px;
+  /*font-family: "Bagel Fat One", system-ui; 'Broadway', sans-serif; "Poetsen One", sans-serif;*/
 }
 
 h2 {
