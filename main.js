@@ -61,4 +61,3 @@ for (const heladeria of heladerias) {
     `;
     document.getElementById("principal").appendChild(nuevaH);
 }
-
