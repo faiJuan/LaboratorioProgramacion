@@ -208,18 +208,18 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.botonPagina {
+button {
   margin: 0 5px;
   padding: 8px 12px;
   cursor: pointer;
-  background-color: #eee;
-  border: 2px solid #ccc;
+  background-color: rgb(232, 205, 175);
+  border: 2px solid rgb(217, 181, 143);
   border-radius: 8px;
   font-weight: bold;
 }
 
-.botonPagina:hover {
-  background-color: #ddd;
+button:hover {
+  background-color: rgb(217, 181, 143);
 }
 
 footer {
