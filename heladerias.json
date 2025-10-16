@@ -1,43 +1,674 @@
 [
     {
-        "nombre": "Pire Patagonia",
-        "rangoPrecio": "$$$",
+        "nombre": "Diagonal Pire Patagonia",
+        "rangoPrecio": "$$$$",
         "direccion": "Bv. Marcelo T. de Alvear 29, Neuquén",
-        "telefono": "299374368",
+        "horaApertura": 12,
+        "horaCierre": 23,
+        "telefono": "0299 443-0575",
         "gmail": "pirePatagonia@gmail",
         "puntuacion": 4.5,
         "info": "Piré es una empresa familiar con presencia en la Patagonia desde 1986. El objetivo principal es ofrecer el mejor helado artesanal y un excelente servicio. Para lograrlo, cuestan con una amplia gama de productos. Más de 50 sabores y variedades tales como postres, alfajores, bombones, palitos helados, tortas, chocolates y opciones saladas. Tienen puntos de venta en las provincias de Neuquén y Río Negro.",
-        "instagram":"Pire Patagonia",
-        "logoUrl":"imagenes/Pire.png"
+        "instagram": "heladeriaspire",
+        "igUrl": "https://www.instagram.com/heladeriaspire/",
+        "logoUrl": "imagenes/Pire.png",
+        "sabores": "https://pirepatagonia.com.ar/sabores.php",
+        "resenias": [
+            {
+                "nombre": "Lucía M",
+                "descripcion": "Cada vez que paso por Pire Patagonia, no puedo evitar entrar. El helado de frutos del bosque es una obra de arte: intenso, cremoso y perfectamente equilibrado. El local tiene una estética rústica y moderna a la vez, muy acogedora. Ideal para una pausa en la tarde.",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "Martín R",
+                "descripcion": "Me encantó la propuesta de sabores regionales como calafate y rosa mosqueta. Se nota que trabajan con ingredientes locales y eso le da un plus. El servicio fue amable, aunque había bastante gente y tardaron un poco. Volvería sin dudas.",
+                "puntuacion": 5
+            },
+            {
+                "nombre": "Carla G",
+                "descripcion": "Probé el helado de chocolate patagónico con nibs de cacao y fue una explosión de sabor. Nada que ver con las heladerías comerciales. Además, tienen opciones veganas que están igual de buenas. ¡Un lujo!",
+                "puntuacion": 4.5
+            },
+            {
+                "nombre": "Fede T",
+                "descripcion": "El lugar es lindo y los sabores son originales, pero el helado estaba un poco derretido cuando lo sirvieron. Tal vez fue un mal día. Me gustó el de dulce de leche con nueces, pero no me sorprendió tanto como esperaba.",
+                "puntuacion": 4.5
+            },
+            {
+                "nombre": "Ana S",
+                "descripcion": "Pire Patagonia es sinónimo de calidad. Cada sabor tiene personalidad, y el personal siempre está dispuesto a recomendarte algo nuevo. El de limón con menta es súper refrescante. ¡Mi favorito!",
+                "puntuacion": 4.5
+            }
+        ]
     },
     {
         "nombre": "Cuore di Panna",
         "rangoPrecio": "$$$$",
         "direccion": "Santa Fé 797, Neuquén",
-        "telefono": "299374368",
+        "horaApertura": 10,
+        "horaCierre": 21,
+        "telefono": "0299 438-6760",
         "gmail": "rrhh@cuorehelados.com.ar",
         "puntuacion": 4.4,
         "info": "Más de 20 años del verdadero sabor del helado italiano en Cuore di Panna, donde la pasión por la excelencia se refleja en cada uno de sus sabores. El compromiso con la calidad comienza con la cuidadosa selección de las materias primas de origen italiano, garantizando que el proceso y maquinarias de elaboración sigan con los estándares de calidad más elevados. Cuentan con una fábrica y productos con habilitación nacional para producir y vender a lo largo y ancho de todo el país.",
-        "instagram":"cuorehelados"
+        "instagram": "cuorehelados",
+        "igUrl": "https://www.instagram.com/cuorehelados/",
+        "logoUrl": "imagenes/Cuore.png",
+        "sabores": "https://cuorehelados.com.ar/sabores/",
+        "resenias": [
+             {
+                "nombre": "Natalia V",
+                "descripcion": "Cada vez que visito Cuore di Panna, me sorprenden con un sabor nuevo. El helado de pistacho es cremoso y auténtico, nada artificial. El local tiene un estilo simple pero cálido, perfecto para sentarse un rato y disfrutar.",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "Diego F",
+                "descripcion": "Me encantó la propuesta de sabores italianos tradicionales como stracciatella y tramontana. Se nota la inspiración artesanal y el cuidado en cada detalle. El personal fue muy atento, incluso cuando el local estaba lleno.",
+                "puntuacion": 4.5
+            },
+            {
+                "nombre": "Clara M",
+                "descripcion": "Probé el helado de chocolate amargo con almendras y fue una delicia. Textura perfecta, sabor profundo, y una presentación cuidada. Además, tienen opciones sin azúcar que no sacrifican sabor. ¡Muy recomendado!",
+                "puntuacion": 5
+            },
+            {
+                "nombre": "Elisa R",
+                "descripcion": "Cuore di Panna es un lugar donde se nota la pasión por el helado. Los sabores tienen carácter, y siempre me recomiendan algo distinto según mi humor. El de limón con albahaca es simplemente espectacular.",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "Paula V",
+                "descripcion": "Me encanta Cuore!! Voy siempre a los horarios de poca gente asi me atienden rápido y amable. De los helados ni que hablarrrr 11/10",
+                "puntuacion": 5
+            },
+            {
+                "nombre": "Santiago P",
+                "descripcion": "Excelentes helados!!!! Un poco caros pero super cremosos!!!",
+                "puntuacion": 5
+            }
+        ]
     },
     {
         "nombre": "Lucciano's",
         "rangoPrecio": "$$$$$",
         "direccion": "Avenida Argentina 1273, Neuquén",
-        "telefono": "299 411-8195",
+        "horaApertura": 11,
+        "horaCierre": 20,
+        "telefono": "0299 411-8195",
         "gmail": "info@luccianos.com.ar",
         "puntuacion": 4.4,
         "info": "Lucciano’s es una empresa familiar que nace a partir del deseo de atender al segmento de consumidores más exigentes de helado artesanal de nuestro país. Nos fuimos a Italia y trajimos la última técnología para fabricar helado y a los mejores maestros heladeros. Combinamos las mejores materias primas nacionales e italianas junto a chocolates belgas para así desarrollar un producto único, inigualable y así nos convertimos en el sinónimo del mejor helado Premium del mercado.",
-        "instagram":"luccianos_"
+        "instagram": "luccianos_",
+        "igUrl": "https://www.instagram.com/luccianos_/",
+        "logoUrl": "imagenes/Luccianos.png",
+        "sabores": "https://luccianos.net/en/products?c=all",
+        "resenias": [
+             {
+                "nombre": "Julieta N",
+                "descripcion": "Cada vez que paso por Lucciano’s, termino entrando. El helado de pistacho es suave, intenso y se nota que usan ingredientes de calidad. El local tiene una onda moderna y divertida, ideal para ir con amigos o en familia.",
+                "puntuacion": 5
+            },
+            {
+                "nombre": "Bruno C",
+                "descripcion": "Me fascinó la variedad de sabores: desde los clásicos italianos hasta combinaciones súper creativas como cheesecake de maracuyá. El servicio fue rápido y amable, incluso con bastante gente esperando.",
+                "puntuacion": 4.5
+            },
+            {
+                "nombre": "Malena R",
+                "descripcion": "Probé el de chocolate belga con trozos de brownie y fue increíble. La textura, el sabor, todo perfecto. También tienen opciones sin TACC que me vinieron bárbaro. Lucciano’s siempre sorprende.",
+                "puntuacion": 5
+            },
+            {
+                "nombre": "Ezequiel T",
+                "descripcion": "El lugar es muy lindo y está bien ambientado, aunque el día que fui había mucha fila. Aun así, valió la pena por el dulce de leche con almendras caramelizadas. Lo volvería a elegir.",
+                "puntuacion": 4.5
+            },
+            {
+                "nombre": "Florencia B",
+                "descripcion": "Lucciano’s es de esos lugares que elevan el helado a otro nivel. Me encantan los sabores frutales como mango o frutos rojos. Además, los palitos con forma de personajes son un gol si vas con chicos.",
+                "puntuacion": 5
+            },
+            {
+                "nombre": "Roberto R",
+                "descripcion": "Probé chocolate blanco & pistacho más flan casero y estaban buenísimos. Excelente atención, me ayudaron a decidir. Cuando vuelva a Neuquén es parada segura.",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "Mercedes M",
+                "descripcion": "Amo los sabores que tienen, son mis favoritos, pero particularmente en esta sucursal la atención es un desastre. Tardan un montón en cobrarte y en prepararte el helado. He ido 4 o 5 veces y siempre es lo mismo. Deberían poner más personal!",
+                "puntuacion": 3.5
+            },
+            {
+                "nombre": "Nadia T",
+                "descripcion": "Espectacular la atención de todos los chicos! El helado muy rico y los chocolates tmb. Lo que no puedo creer es que no ande el aire acondicionado desde el verano del año pasado... Muy desagradable ver a todos los chicos transpirados. Media pila y cambienlo!",
+                "puntuacion": 3
+            },
+            {
+                "nombre": "Oscar O",
+                "descripcion": "Riquísimos los helados, la atención del personal excepcional, el local amplio y cómodo.",
+                "puntuacion": 4
+            }
+        ]
     },
     {
         "nombre": "Grido Helados",
         "rangoPrecio": "$",
         "direccion": "Av. Coronel Olascoaga 1035, Neuquén",
-        "telefono": "299 442-7519",
+        "horaApertura": 11,
+        "horaCierre": 24,
+        "telefono": "0299 442-7519",
         "gmail": "gridoHeladosNeuquen@gmail.com",
         "puntuacion": 4.0,
         "info": "Tiene como objetivo crecer y desarrollarse ofreciendo con calidad y calidez cremas heladas deliciosas, saludables y seguras. Así sus clientes vivirán momentos placenteros, en un ambiente agradable y familiar.",
-        "instagram":"gridohelados"
+        "instagram": "gridohelados",
+        "igUrl": "https://www.instagram.com/gridohelados/",
+        "logoUrl": "imagenes/Grido.png",
+        "sabores": "https://argentina.gridohelado.com/productos/",
+        "resenias": [
+             {
+                "nombre": "Lorena P",
+                "descripcion": "Grido siempre es una opción confiable cuando quiero algo dulce sin gastar mucho. El helado de frutilla a la crema es rico, aunque no tan cremoso como otras heladerías más artesanales. Igual, cumple.",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "Gabriel M",
+                "descripcion": "Tienen buena variedad de sabores y los precios son accesibles, eso se valora. Probé el de dulce de leche granizado y estaba bastante bien. El local podría estar más cuidado, pero la atención fue correcta.",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "Mónica L",
+                "descripcion": "Lo que más me gusta de Grido es que está en todos lados. No es el mejor helado del mundo, pero es rico y cumple con lo que promete. El cucurucho doble es ideal para compartir sin gastar una fortuna.",
+                "puntuacion": 4.5
+            },
+            {
+                "nombre": "Facundo D",
+                "descripcion": "El chocolate amargo me gustó, aunque la textura era un poco más dura de lo esperado. Fui un día de calor y había bastante fila. No es una experiencia premium, pero zafa para un antojo rápido.",
+                "puntuacion": 3.5
+            },
+            {
+                "nombre": "Celeste G",
+                "descripcion": "Grido tiene sus altibajos. A veces el helado está muy bien, otras medio derretido. Lo mejor: las promos y los kilos económicos. El de banana split me sorprendió para bien.",
+                "puntuacion": 3.5
+            },
+            {
+                "nombre": "Valeria V",
+                "descripcion": "Los mejores siempre, siempre una sonrisa y súper atentos, hice un reclamo una vez y no fue un lío en absoluto.",
+                "puntuacion": 4.5
+            },
+            {
+                "nombre": "Celina V",
+                "descripcion": "2 personas atendiendo y cobrando, pésimo, pobres pibes.",
+                "puntuacion": 2
+            },
+            {
+                "nombre": "Gustavo G",
+                "descripcion": "Buena atención. Precios razonables. Productos que ofrecen disponibilidad.",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "Agustin L",
+                "descripcion": "Vine a comprar y horario de cierre decía 12:30, llegué 12:27 y no me quisieron atender. Por eso Piré siempre va a ser superior.",
+                "puntuacion": 1
+            }
+        ]
+    },
+    {
+        "nombre": "Heidi Bar de Helados",
+        "rangoPrecio": "$$$",
+        "direccion": "Juan Bautista Alberdi 217",
+        "horaApertura": 8.30,
+        "horaCierre": 24.30,
+        "telefono": "0299 458-6701",
+        "gmail": "heidihelados@gmail.com",
+        "puntuacion": 4.0,
+        "info": "En Heidi se dedican a crear helados artesanales, postres y palitos irresistibles. Utilizan ingredientes naturales y cuidan cada detalle para ofrecer más de 50 sabores con la calidad que los distingue. Cada producto refleja su pasión por el sabor y la tradición.",
+        "instagram": "heidi_heladerias",
+        "igUrl": "https://www.instagram.com/heidi_heladerias/",
+        "logoUrl": "imagenes/Heidi.webp",
+        "sabores": "https://heidiheladerias.com/cremas-heladas/",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Helados Gio",
+        "rangoPrecio": "$$",
+        "direccion": "Félix San Martín 1216",
+        "horaApertura": 14,
+        "horaCierre": 23,
+        "telefono": "0299 470-9660",
+        "gmail": "heladosgiovanni@hotmail.com",
+        "puntuacion": 4.0,
+        "info": "Helado Artesanal al alcance de todos.",
+        "instagram": "heladosgioneuquen",
+        "igUrl": "https://www.instagram.com/heladosgioneuquen/",
+        "logoUrl": "imagenes/Gio.jpg",
+        "sabores": "https://www.facebook.com/HeladosGioNeuquen/?ref=_xav_ig_profile_page_web#",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Fiore Helados",
+        "rangoPrecio": "$$$$",
+        "direccion": "Diag. 9 de Julio 95",
+        "horaApertura": 10,
+        "horaCierre": 2,
+        "telefono": "0299 327-8187",
+        "gmail": "nfo@fiorehelados.com.ar",
+        "puntuacion": 4.0,
+        "info": "Helados premium de la Patagonia que destacan por su cremosidad y sabor auténtico. Ofrecen opciones sin gluten, alternativas veganas y una línea baja en glúcidos. También cuentan con una selección exclusiva de macarons y pastelería propia, todos libres de gluten.",
+        "instagram": "fiorehelados",
+        "igUrl": "https://www.instagram.com/fiorehelados/",
+        "logoUrl": "imagenes/Fiore.jpg",
+        "sabores": "https://fiore.com.ar/#productos",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Heladeria Los Amores",
+        "rangoPrecio": "$$",
+        "direccion": "Presidente Arturo H. Illia 44",
+        "horaApertura": 14,
+        "horaCierre": 2,
+        "telefono": "0299 420-4072",
+        "gmail": "heladoslosamoress@gmail.com",
+        "puntuacion": 4.0,
+        "info": "Heladeria Los Amores, donde vas a encontrar los mejores sabores de helado artesanal, con más de 50 variedades y entre ellas 30 sin TACC, 7 veganos y 3 bajos en azúcar.",
+        "instagram": "losamores.neuquen",
+        "igUrl": "https://www.instagram.com/losamores.neuquen/?hl=en",
+        "logoUrl": "imagenes/LosAmores.jpg",
+        "sabores": "https://www.instagram.com/stories/highlights/18041079161211494/?hl=en",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Helados Il Candore",
+        "rangoPrecio": "$$$",
+        "direccion": "Bartolomé Mitre 277",
+        "horaApertura": 8,
+        "horaCierre": 24,
+        "telefono": "0299 482-3356",
+        "gmail": "ilcandore@gmail.com",
+        "puntuacion": 4.0,
+        "info": "Helados Artesanales, Cafetería y Pastelería. Los mejores precios y la mejor calidad... Atendida por sus propios dueños.",
+        "instagram": "heladosilcandore",
+        "igUrl": "https://www.instagram.com/heladosilcandore/",
+        "logoUrl": "imagenes/IlCandore.jpg",
+        "sabores": "https://www.heladosilcandore.com.ar/carta/",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Dulce Malvina",
+        "rangoPrecio": "$$$",
+        "direccion": "Manuel Láinez 282",
+        "horaApertura": 8,
+        "horaCierre": 23.30,
+        "telefono": "0299 448-1781",
+        "gmail": "mktg@dulcemalvina.com.ar",
+        "puntuacion": 4.0,
+        "info": "Es una empresa familiar fundada hace 25 años con el propósito de brindar los mejores productos artesanales, tanto en heladería como confitería. También delivery online de Helados y Confitería",
+        "instagram": "dulcemalvina.nqn",
+        "igUrl": "https://www.instagram.com/dulcemalvina.nqn/",
+        "logoUrl": "imagenes/DulceMalvina.jpg",
+        "sabores": "https://dulcemalvina.com.ar/menu-de-productos/helados/",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Mikelo",
+        "rangoPrecio": "$$$$",
+        "direccion": "Av. Coronel Olascoaga 865",
+        "horaApertura": 12,
+        "horaCierre": 24,
+        "telefono": "0299 419-6037",
+        "gmail": "mikelo@gmail.com",
+        "puntuacion": 4.0,
+        "info": "MIKELO, el auténtico helado italiano en Neuquén",
+        "instagram": "mikelogelatieri",
+        "igUrl": "https://www.instagram.com/mikelogelatieri/?hl=en",
+        "logoUrl": "imagenes/Mikelo.jpg",
+        "sabores": "https://drive.google.com/file/d/1N6qEybjmNbY7bCKHzxYsDHnqWgU7HajP/view",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Heladeria Franep's",
+        "rangoPrecio": "$$",
+        "direccion": "Carlos H. Rodríguez 28",
+        "horaApertura": 13,
+        "horaCierre": 23,
+        "telefono": "0299 382-9382",
+        "gmail": "franeps@gmail.com",
+        "puntuacion": 4.0,
+        "info": "Es una empresa familiar de Bariloche, especializados en chocolates y helados. Con 10 años de experiencia en el rubro del chocolate. Segunda generación de chocolatero, maestro pastelero y máster heladero. Su elaboración artesanal de helados con materias primas naturales y de origen italiano, se complementa con la experiencia para llevar a la gente un producto de calidad.",
+        "instagram": "franeps",
+        "igUrl": "https://www.instagram.com/franeps/",
+        "logoUrl": "imagenes/Franeps.jpg",
+        "sabores": "https://www.pedidosya.com.ar/restaurantes/neuquen/franeps-e888aa24-fd44-4b5e-bedf-c9246dfd0286-menu",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Fiore Helados",
+        "rangoPrecio": "$$$$",
+        "direccion": "Avenida Argentina 16",
+        "horaApertura": 9,
+        "horaCierre": 1,
+        "telefono": "0299 546-7979",
+        "gmail": "nfo@fiorehelados.com.ar",
+        "puntuacion": 4.0,
+        "info": "Helados premium de la Patagonia que destacan por su cremosidad y sabor auténtico. Ofrecen opciones sin gluten, alternativas veganas y una línea baja en glúcidos. También cuentan con una selección exclusiva de macarons y pastelería propia, todos libres de gluten.",
+        "instagram": "fiorehelados",
+        "igUrl": "https://www.instagram.com/fiorehelados/",
+        "logoUrl": "imagenes/Fiore.jpg",
+        "sabores": "https://fiore.com.ar/#productos",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Roma Heladerias",
+        "rangoPrecio": "$$$",
+        "direccion": "Av. Coronel Olascoaga 1120",
+        "horaApertura": 12,
+        "horaCierre": 23.30,
+        "telefono": "0299 524-9800",
+        "gmail": "romahelados@gmail.com",
+        "puntuacion": 4.0,
+        "info": "Roma Heladerías Neuquén gran variedad de cremas hechas especialmente para ti!",
+        "instagram": "heladeriasroma",
+        "igUrl": "https://www.instagram.com/heladeriasroma/",
+        "logoUrl": "imagenes/Roma.jpg",
+        "sabores": "https://www.instagram.com/p/CHdKApsn8Jf/",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Costa Piré",
+        "rangoPrecio": "$$$$",
+        "direccion": "Av. Coronel Olascoaga 1809",
+        "horaApertura": 10,
+        "horaCierre": 24,
+        "telefono": "0299 442-9333",
+         "gmail": "pirePatagonia@gmail",
+        "puntuacion": 4.5,
+        "info": "Piré es una empresa familiar con presencia en la Patagonia desde 1986. El objetivo principal es ofrecer el mejor helado artesanal y un excelente servicio. Para lograrlo, cuestan con una amplia gama de productos. Más de 50 sabores y variedades tales como postres, alfajores, bombones, palitos helados, tortas, chocolates y opciones saladas. Tienen puntos de venta en las provincias de Neuquén y Río Negro.",
+        "instagram": "heladeriaspire",
+        "igUrl": "https://www.instagram.com/heladeriaspire/",
+        "logoUrl": "imagenes/Pire.png",
+        "sabores": "https://pirepatagonia.com.ar/sabores.php",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Dulce Malvina",
+        "rangoPrecio": "$$$",
+        "direccion": "Ministro Joaquín V. González 26",
+        "horaApertura": 8,
+        "horaCierre": 24,
+        "telefono": "0299 448-1781",
+        "gmail": "mktg@dulcemalvina.com.ar",
+        "puntuacion": 4.0,
+        "info": "Es una empresa familiar fundada hace 25 años con el propósito de brindar los mejores productos artesanales, tanto en heladería como confitería. También delivery online de Helados y Confitería",
+        "instagram": "dulcemalvina.nqn",
+        "igUrl": "https://www.instagram.com/dulcemalvina.nqn/",
+        "logoUrl": "imagenes/DulceMalvina.jpg",
+        "sabores": "https://dulcemalvina.com.ar/menu-de-productos/helados/",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Lucciano's Paseo de la Costa",
+        "rangoPrecio": "$$$$$",
+        "direccion": "Cabo Segundo Lopez 2119",
+        "horaApertura": 12,
+        "horaCierre": 24,
+        "telefono": "0299 332-4421",
+        "gmail": "info@luccianos.com.ar",
+        "puntuacion": 4.4,
+        "info": "Lucciano’s es una empresa familiar que nace a partir del deseo de atender al segmento de consumidores más exigentes de helado artesanal de nuestro país. Nos fuimos a Italia y trajimos la última técnología para fabricar helado y a los mejores maestros heladeros. Combinamos las mejores materias primas nacionales e italianas junto a chocolates belgas para así desarrollar un producto único, inigualable y así nos convertimos en el sinónimo del mejor helado Premium del mercado.",
+        "instagram": "luccianos_",
+        "igUrl": "https://www.instagram.com/luccianos_/",
+        "logoUrl": "imagenes/Luccianos.png",
+        "sabores": "https://luccianos.net/en/products?c=all",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Eletto",
+        "rangoPrecio": "$$",
+        "direccion": "V, Chrestia 510",
+        "horaApertura": 12,
+        "horaCierre": 24,
+        "telefono": "0299 448-3100",
+        "gmail": "info@eletto.ar",
+        "puntuacion": 4.0,
+        "info": "Son un emprendimiento Neuquino, nacido como una empresa familiar, donde combinan el afecto a nuestra tierra con los mas genuinos valores personales. Desarrollan las mas exquisitas cremas heladas, en un ambiente de calidez y seguridad sanitaria.",
+        "instagram": "elettohelados",
+        "igUrl": "https://www.instagram.com/elettohelados/",
+        "logoUrl": "imagenes/Eletto.jpg",
+        "sabores": "https://eletto.ar/sabores.html",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Grido Helados",
+        "rangoPrecio": "$",
+        "direccion": "Bartolomé Mitre 395",
+        "horaApertura": 11,
+        "horaCierre": 24,
+        "telefono": "0299 442-7519",
+        "gmail": "gridoHeladosNeuquen@gmail.com",
+        "puntuacion": 4.0,
+        "info": "¡Son la heladería de tu barrio y la tercera cadena de helados más grande del mundo! Con más de 1,900 franquicias, llevan sus helados a miles de mesas en Argentina, Uruguay, Chile, Paraguay y Perú, compartiendo momentos felices. ¡Andá a visitarlos y hace de cada visita un momento para disfrutar y sonreír!",
+        "instagram": "gridohelados",
+        "igUrl": "https://www.instagram.com/gridohelados/",
+        "logoUrl": "imagenes/Grido.png",
+        "sabores": "https://argentina.gridohelado.com/productos/",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Mikelo",
+        "rangoPrecio": "$$$$",
+        "direccion": "Gdor. Elordi 605",
+        "horaApertura": 9.30,
+        "horaCierre": 23.30,
+        "telefono": "0299 630-1441",
+        "gmail": "mikelo@gmail.com",
+        "puntuacion": 4.0,
+        "info": "MIKELO, el auténtico helado italiano en Neuquén",
+        "instagram": "mikelogelatieri",
+        "igUrl": "https://www.instagram.com/mikelogelatieri/?hl=en",
+        "logoUrl": "imagenes/Mikelo.jpg",
+        "sabores": "https://drive.google.com/file/d/1N6qEybjmNbY7bCKHzxYsDHnqWgU7HajP/view",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
+    },
+    {
+        "nombre": "Helados Jauja",
+        "rangoPrecio": "$$",
+        "direccion": "Carlos H. Rodríguez 568",
+        "horaApertura": 11,
+        "horaCierre": 23.30,
+        "telefono": "0299 576-9033",
+        "gmail": "info@jauja.ar",
+        "puntuacion": 4.0,
+        "info": "Sus helados son elaborados día a día con materias primas naturales; No utilizan ningún ingrediente artificial, ni mucho menos colorantes, saborizantes, espesantes, etc. Desde sus inicios, se caracterizan por proponerte sabores tradicionales y otros “raros” (que ahora les alegra ver que se han puesto de moda). Les apasiona explorar la alquimia de lograr que tu experiencia con sus helados se convierta en algo único. Es importante tener en cuenta que cada vez que tomes un helado Jauja, será una experiencia diferente. ¿Por qué? Porque al usar materias primas naturales habrá variaciones inevitables: por ejemplo las frutas no son siempre iguales… y eso se ve reflejado en cada sabor.",
+        "instagram": "jaujaneuquen",
+        "igUrl": "https://www.instagram.com/jaujaneuquen/",
+        "logoUrl": "imagenes/Jauja.jpg",
+        "sabores": "https://www.jauja.com.ar/helados/",
+        "resenias": [
+             {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "puntuacion": 4
+            }
+        ]
     }
 ]
