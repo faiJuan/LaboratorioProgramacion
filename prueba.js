@@ -35,7 +35,7 @@ function mostrarPagina(pagina) {
               <li id="Abierto">Abierto</li>
           </ul>
       </div>
-      <a class="botonInfo" href="archivosHtml/${heladeria.nombre.split(' ').join('').toLowerCase()}Info.html" target="_blank">info</a>
+      <a class="botonInfo" href="archivosHtml/heladeriaInfo${heladeria.id}.html" target="_blank">info</a>
     `;
         contenedor.appendChild(nuevaH);
     }
