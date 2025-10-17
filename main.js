@@ -48,7 +48,7 @@ function mostrarPagina(pagina) {
 function crearBotonesPaginacion(totalHeladerias) {
     paginacion.innerHTML = '';
     const totalPaginas = Math.ceil(totalHeladerias / HELADERIAS_POR_PAGINA);
- 
+    //Boton Anterior
     const btnAnterior = document.createElement('button');
     btnAnterior.textContent = 'Anterior';
     btnAnterior.disabled = paginaActual === 1;
@@ -61,7 +61,7 @@ function crearBotonesPaginacion(totalHeladerias) {
     });
     paginacion.appendChild(btnAnterior);
 
-    // Botones numéricos de página
+    //Botones numéricos de página
     for (let i = 1; i <= totalPaginas; i++) {
         const btn = document.createElement('button');
         btn.textContent = i;
@@ -74,7 +74,7 @@ function crearBotonesPaginacion(totalHeladerias) {
         paginacion.appendChild(btn);
     }
 
-    // Botón "Siguiente"
+    //Boton Siguiente
     const btnSiguiente = document.createElement('button');
     btnSiguiente.textContent = 'Siguiente';
     btnSiguiente.disabled = paginaActual === totalPaginas;
@@ -88,6 +88,7 @@ function crearBotonesPaginacion(totalHeladerias) {
     paginacion.appendChild(btnSiguiente);
 }
 
+//Funcion para saber si la heladeria esta abierta o cerrada -- HAY Q ARREGLAR el tema de los horarios del json
 function estaAbierto(abre, cierra) {
     let estado = "Cerrado";
     if (new Date().getHours() >= abre && new Date().getHours() < cierra) {
