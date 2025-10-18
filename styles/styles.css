@@ -1,13 +1,3 @@
-h1 {
-  font-size: 70px;
-  font-family: "Bagel Fat One", system-ui;
-  font-weight: lighter;
-  color: rgb(230, 161, 165);
-  text-align: left;
-  margin: 0px;
-  /*font-family: "Bagel Fat One", system-ui; 'Broadway', sans-serif; "Poetsen One", sans-serif;*/
-}
-
 h2 {
   font-size: 36px;
   font-family: 'Bebas Neue', sans-serif;
@@ -16,94 +6,20 @@ h2 {
   text-align: center;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url('../imagenes/header.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  min-height: 110px;
-}
-
 body {
   background: rgb(252, 245, 236);
   margin: 0;
   padding: 0;
 }
 
-.Logo {
-  height: 70px;
-  width: auto;
-  padding: 0px 10px 0px 10px;
-}
-
-.Gelato {
-  margin: 0px;
-}
-
-nav {
-  padding: 0px 5px 0px 5px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0%;
-}
-
-nav li {
-  height: 45px;
-  padding: 5px;
-  align-content: center;
-}
-
-nav a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgb(230, 161, 165);
-  color: white;
-  padding: 5px;
-  text-align: center;
-  font-size: 16px;
-  text-decoration: none;
-  font-family: Tahoma, sans-serif;
-  cursor: pointer;
-  border: none;
-  border-radius: 12px;
-}
-
-nav a:hover {
-  background-color: rgb(204, 115, 120);
-}
-
-.ImagenCabecera {
-  height: 22px;
-  width: auto;
-}
-
-.Separador {
-  display: flex;
-  flex-grow: 1;
-}
-
 .contenedor {
   display: flex;
   flex-wrap: wrap;
   row-gap: 60px;
-  /*controla el espacio entre las filas creadas*/
   column-gap: 60px;
-  /*controla el espacio entre las columnas creadas*/
   justify-content: center;
   width: 100%;
-  /*fit-content;*/
   margin: 50px auto 50px auto;
-  /*para controlar los espacios exteriores del contenedor*/
   max-width: 1400px;
 }
 
@@ -115,13 +31,10 @@ nav a:hover {
   border: 8px solid rgb(217, 181, 143);
   display: flex;
   align-items: flex-start;
-  /*alinea los item a al inicio de donde comienza el eje transversal, osea la izquierda*/
   justify-content: center;
   flex-direction: column;
-  /* apila el título y el contenido */
   padding: 20px;
   box-sizing: border-box;
-  /*Importante para que padding y border no sumen ancho, haciendo que los cuadros no sean mas anchos de lo debido.*/
   gap: 15px;
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -134,7 +47,6 @@ nav a:hover {
 
 .cuadro .titulo {
   align-self: center;
-  /*se auto alinea en el centro del eje del flex, ya que los otros van a la izq*/
   text-align: center;
   margin: 0;
 }
@@ -179,7 +91,6 @@ nav a:hover {
   font-family: Tahoma, sans-serif;
   border-radius: 12px;
   cursor: pointer;
-  /*cambia a la manito al pasar por encima*/
   width: 90px;
   align-self: center;
   text-align: center;
@@ -202,10 +113,10 @@ nav a:hover {
   color: red
 }
 
-.pagina {
+.botonesPaginacion {
   margin-top: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 button {
@@ -215,7 +126,7 @@ button {
   background-color: rgb(232, 205, 175);
   border: 2px solid rgb(217, 181, 143);
   border-radius: 8px;
-  font-weight: bold; 
+  font-weight: bold;
   color: rgb(104, 85, 64);
 }
 
@@ -223,50 +134,6 @@ button:hover {
   background-color: rgb(217, 181, 143);
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px;
-  background-color: rgb(232, 207, 202);
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 30px;
-  color: rgb(104, 85, 64);
-  position: relative;
-  bottom: 0;
-  gap: 50px;
-}
-
-.Integrantes {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-  font-size: 18px;
-  font-weight: normal;
-  font-family: 'Century Gothic', sans-serif;
-  text-align: center;
-}
-
-.Integrantes a {
-  text-decoration: none;
-  color: rgb(104, 85, 64);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  padding: 20px;
-}
-
-.Integrantes a img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid rgb(104, 85, 64);
-}
-
-.Integrantes a h3 {
-  margin: 0;
-  font-size: 18px;
+button:disabled {
+  background-color: rgb(217, 181, 143);
 }

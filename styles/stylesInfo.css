@@ -2,15 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: 70px;
-  font-family: 'Broadway', sans-serif;
-  font-weight: lighter;
-  color: rgb(230, 161, 165);
-  text-align: left;
-  margin: 0px;
-}
-
 h2 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -20,79 +11,12 @@ h2 {
   margin: 15px;
 }
 
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url('../imagenes/header.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  height: 108px;
-}
-
 body {
   background: rgb(252, 245, 236);
   margin: 0;
   padding: 0;
   min-height: 100vh;
   height: 100%;
-}
-
-.Logo {
-  height: 70px;
-  width: auto;
-  padding: 0px 10px 0px 10px;
-}
-
-.Gelato {
-  margin: 0px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0%;
-}
-
-nav li {
-  height: 45px;
-  padding: 5px;
-  align-content: center;
-}
-
-nav a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgb(230, 161, 165);
-  color: white;
-  padding: 5px;
-  text-align: center;
-  font-size: 16px;
-  text-decoration: none;
-  font-family: Tahoma, sans-serif;
-  cursor: pointer;
-  border: none;
-  border-radius: 12px;
-  align-items: center;
-}
-
-nav a:hover {
-  background-color: rgb(204, 115, 120);
-}
-
-.ImagenCabecera {
-  height: 22px;
-  width: auto;
-}
-
-.Separador {
-  display: flex;
-  flex-grow: 1;
 }
 
 .organizador {
@@ -121,9 +45,10 @@ nav a:hover {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 15px 50px;
+  min-width: 700px;
 }
 
-.mapa {
+.sabores {
   height: auto;
   width: 250px;
   border-radius: 50px;
@@ -131,7 +56,7 @@ nav a:hover {
   transition: transform 0.5s linear;
 }
 
-.mapa:hover {
+.sabores:hover {
   transform: scale(1.30);
 }
 
@@ -193,7 +118,7 @@ ul ::marker {
   padding: 0px 3px;
 }
 
-.C {
+.Contactos li {
   display: flex;
   align-items: center;
   justify-content: center;

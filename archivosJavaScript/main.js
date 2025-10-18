@@ -1,21 +1,21 @@
 const contenedor = document.getElementById('principal');
 const paginacion = document.getElementById('paginacion');
-const HELADERIAS_POR_PAGINA = 4;  
+const HELADERIAS_POR_PAGINA = 4;
 let paginaActual = 1;
 let heladeriasGlobal = [];  //para no mandar por parametro las heladerias          
 
-fetch('./heladerias.json')
+fetch('./archivosJson/heladerias.json')
     .then(response => response.json())
     .then(heladerias => {
-        heladeriasGlobal = heladerias;  
-        mostrarPagina(paginaActual);       
-        crearBotonesPaginacion(heladerias.length); 
+        heladeriasGlobal = heladerias;
+        mostrarPagina(paginaActual);
+        crearBotonesPaginacion(heladerias.length);
     })
     .catch(error => console.error('Error cargando el JSON:', error));
 
 
 function mostrarPagina(pagina) {
-    contenedor.innerHTML = ''; 
+    contenedor.innerHTML = '';
     const inicio = (pagina - 1) * HELADERIAS_POR_PAGINA;
     const fin = inicio + HELADERIAS_POR_PAGINA;
     const heladeriasPagina = heladeriasGlobal.slice(inicio, fin);
@@ -34,13 +34,13 @@ function mostrarPagina(pagina) {
           </ul>
       </div>
     `;
-    const botoninfo=document.createElement("a");
-    botoninfo.innerText="info";
-    botoninfo.classList.add("botonInfo");
-    botoninfo.href=`archivosHtml/heladeriaInfo.html?id=${heladeria.id}`;
-    botoninfo.target="_blank";
-    nuevaH.appendChild(botoninfo);
-    contenedor.appendChild(nuevaH);
+        const botoninfo = document.createElement("a");
+        botoninfo.innerText = "info";
+        botoninfo.classList.add("botonInfo");
+        botoninfo.href = `./heladeriaInfo.html?id=${heladeria.id}`;
+        botoninfo.target = "_self";
+        nuevaH.appendChild(botoninfo);
+        contenedor.appendChild(nuevaH);
     }
 }
 
@@ -49,7 +49,7 @@ function crearBotonesPaginacion(totalHeladerias) {
     const totalPaginas = Math.ceil(totalHeladerias / HELADERIAS_POR_PAGINA);
     //Boton Anterior
     const btnAnterior = document.createElement('button');
-    btnAnterior.textContent = 'Anterior';
+    btnAnterior.textContent = '<';
     btnAnterior.disabled = paginaActual === 1;
     btnAnterior.addEventListener('click', () => {
         if (paginaActual > 1) {
@@ -75,7 +75,7 @@ function crearBotonesPaginacion(totalHeladerias) {
 
     //Boton Siguiente
     const btnSiguiente = document.createElement('button');
-    btnSiguiente.textContent = 'Siguiente';
+    btnSiguiente.textContent = '>';
     btnSiguiente.disabled = paginaActual === totalPaginas;
     btnSiguiente.addEventListener('click', () => {
         if (paginaActual < totalPaginas) {
@@ -96,20 +96,5 @@ function estaAbierto(abre, cierra) {
     }
     return estado;
 };
-
-//Carga del footer
-const footer = document.getElementById('footer');
-fetch('./footer.json')
-    .then(response => response.json())
-    .then(integrantes => {
-        footer.innerHTML = `
-        <h3>Grupo 7</h3>  
-        <div class="Integrantes"> 
-            <a class="Git" href="${integrantes[0].linkGit}" target="_blank"> <img src="${integrantes[0].fotoGit}" alt="foto de perfil github"><h3>${integrantes[0].integrante}</h3></a>
-            <a class="Git" href="${integrantes[1].linkGit}" target="_blank"><img src="${integrantes[1].fotoGit}" alt="foto de perfil github"><h3>${integrantes[1].integrante}</h3></a>
-            <a class="Git" href="${integrantes[2].linkGit}" target="_blank"><img src="${integrantes[2].fotoGit}" alt="foto de perfil github"><h3>${integrantes[2].integrante}</h3></a>   
-        </div>`;
-    })
-    .catch(error => console.error('Error cargando el JSON:', error));
 
 

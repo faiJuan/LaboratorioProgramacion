@@ -4,7 +4,7 @@ const id = parseInt(params.get("id"));
 heladeriasGlobal = [];  
 let heladeria={};
 console.log(id);
-fetch('../heladerias.json')
+fetch('./archivosJson/heladerias.json')
   .then(response => response.json()) 
   .then(heladerias => {
         heladeriasGlobal = heladerias;
@@ -28,7 +28,7 @@ function cargarInfo(heladeria){
         const organizador = document.createElement("div");
         organizador.classList.add("organizador");
         organizador.innerHTML+=`
-            <img class="imagen" src="../${heladeria.logoUrl}" alt="Logo heladeria ${heladeria.nombre}" />
+            <img class="imagen" src="./${heladeria.logoUrl}" alt="Logo heladeria ${heladeria.nombre}" />
             <div class="informacion">
                 <p>${heladeria.info}</p>
                 <ul>
@@ -36,16 +36,16 @@ function cargarInfo(heladeria){
                     <li>${heladeria.puntuacion}</li>
                 </ul>
                 <div class="Contactos">
-                    <li class="C"><img class="ContactosImg" src="../imagenes/gmail.png"
+                    <li><img class="ContactosImg" src="./imagenes/gmail.png"
                             alt="imagen del correo electronico" />${heladeria.gmail} </li>
-                    <li class="C"><img class="ContactosImg" src="../imagenes/telefono.png"
-                            alt="imagen del correo electronico" />${heladeria.telefono}</li>
-                    <li class="C"><img class="ContactosImg" src="../imagenes/ig.png"
-                            alt="imagen del correo electronico" />${heladeria.instagram}</li>
+                    <li><img class="ContactosImg" src="./imagenes/telefono.png"
+                            alt="imagen del telefono" />${heladeria.telefono}</li>
+                    <li><img class="ContactosImg" src="./imagenes/ig.png"
+                            alt="imagen de instagram" />${heladeria.instagram}</li>
                 </div>
             </div>
-            <a href="${heladeria.sabores}" target="_blank"><img class="mapa" src="../imagenes/sabores.png"
-                    alt="Logo heladeria ${heladeria.nombre}" /></a>
+            <a href="${heladeria.sabores}" target="_blank"><img class="sabores" src="./imagenes/sabores.png"
+                    alt="imagen bocha de helado sabores ${heladeria.nombre}" /></a>
         `;
         seccion.appendChild(organizador);
         seccion.innerHTML+=`<a class="BotonSec" href="#Sec2"> Reseñas </a>`;

@@ -1,6 +1,6 @@
 [
     {
-        "id":1,
+        "id": 1,
         "nombre": "Diagonal Pire Patagonia",
         "rangoPrecio": "$$$$",
         "direccion": "Bv. Marcelo T. de Alvear 29, Neuquén",
@@ -43,7 +43,7 @@
         ]
     },
     {
-        "id":2,
+        "id": 2,
         "nombre": "Cuore di Panna",
         "rangoPrecio": "$$$$",
         "direccion": "Santa Fé 797, Neuquén",
@@ -58,7 +58,7 @@
         "logoUrl": "imagenes/Cuore.png",
         "sabores": "https://cuorehelados.com.ar/sabores/",
         "resenias": [
-             {
+            {
                 "nombre": "Natalia V",
                 "descripcion": "Cada vez que visito Cuore di Panna, me sorprenden con un sabor nuevo. El helado de pistacho es cremoso y auténtico, nada artificial. El local tiene un estilo simple pero cálido, perfecto para sentarse un rato y disfrutar.",
                 "puntuacion": 4
@@ -91,7 +91,7 @@
         ]
     },
     {
-        "id":3,
+        "id": 3,
         "nombre": "Lucciano's",
         "rangoPrecio": "$$$$$",
         "direccion": "Avenida Argentina 1273, Neuquén",
@@ -106,7 +106,7 @@
         "logoUrl": "imagenes/Luccianos.png",
         "sabores": "https://luccianos.net/en/products?c=all",
         "resenias": [
-             {
+            {
                 "nombre": "Julieta N",
                 "descripcion": "Cada vez que paso por Lucciano’s, termino entrando. El helado de pistacho es suave, intenso y se nota que usan ingredientes de calidad. El local tiene una onda moderna y divertida, ideal para ir con amigos o en familia.",
                 "puntuacion": 5
@@ -154,7 +154,7 @@
         ]
     },
     {
-        "id":4,
+        "id": 4,
         "nombre": "Grido Helados",
         "rangoPrecio": "$",
         "direccion": "Av. Coronel Olascoaga 1035, Neuquén",
@@ -169,7 +169,7 @@
         "logoUrl": "imagenes/Grido.png",
         "sabores": "https://argentina.gridohelado.com/productos/",
         "resenias": [
-             {
+            {
                 "nombre": "Lorena P",
                 "descripcion": "Grido siempre es una opción confiable cuando quiero algo dulce sin gastar mucho. El helado de frutilla a la crema es rico, aunque no tan cremoso como otras heladerías más artesanales. Igual, cumple.",
                 "puntuacion": 4
@@ -217,7 +217,7 @@
         ]
     },
     {
-        "id":5,
+        "id": 5,
         "nombre": "Heidi Bar de Helados",
         "rangoPrecio": "$$$",
         "direccion": "Juan Bautista Alberdi 217",
@@ -232,7 +232,7 @@
         "logoUrl": "imagenes/Heidi.webp",
         "sabores": "https://heidiheladerias.com/cremas-heladas/",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -245,7 +245,7 @@
         ]
     },
     {
-        "id":6,
+        "id": 6,
         "nombre": "Helados Gio",
         "rangoPrecio": "$$",
         "direccion": "Félix San Martín 1216",
@@ -260,7 +260,7 @@
         "logoUrl": "imagenes/Gio.jpg",
         "sabores": "https://www.facebook.com/HeladosGioNeuquen/?ref=_xav_ig_profile_page_web#",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -273,7 +273,7 @@
         ]
     },
     {
-        "id":7,
+        "id": 7,
         "nombre": "Fiore Helados",
         "rangoPrecio": "$$$$",
         "direccion": "Diag. 9 de Julio 95",
@@ -288,7 +288,7 @@
         "logoUrl": "imagenes/Fiore.jpg",
         "sabores": "https://fiore.com.ar/#productos",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -301,7 +301,7 @@
         ]
     },
     {
-        "id":8,
+        "id": 8,
         "nombre": "Heladeria Los Amores",
         "rangoPrecio": "$$",
         "direccion": "Presidente Arturo H. Illia 44",
@@ -316,7 +316,7 @@
         "logoUrl": "imagenes/LosAmores.jpg",
         "sabores": "https://www.instagram.com/stories/highlights/18041079161211494/?hl=en",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -329,7 +329,7 @@
         ]
     },
     {
-        "id":9,
+        "id": 9,
         "nombre": "Helados Il Candore",
         "rangoPrecio": "$$$",
         "direccion": "Bartolomé Mitre 277",
@@ -344,7 +344,7 @@
         "logoUrl": "imagenes/IlCandore.jpg",
         "sabores": "https://www.heladosilcandore.com.ar/carta/",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -357,7 +357,7 @@
         ]
     },
     {
-        "id":10,
+        "id": 10,
         "nombre": "Dulce Malvina",
         "rangoPrecio": "$$$",
         "direccion": "Manuel Láinez 282",
@@ -372,7 +372,7 @@
         "logoUrl": "imagenes/DulceMalvina.jpg",
         "sabores": "https://dulcemalvina.com.ar/menu-de-productos/helados/",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -385,7 +385,7 @@
         ]
     },
     {
-        "id":11,
+        "id": 11,
         "nombre": "Mikelo",
         "rangoPrecio": "$$$$",
         "direccion": "Av. Coronel Olascoaga 865",
@@ -400,7 +400,7 @@
         "logoUrl": "imagenes/Mikelo.jpg",
         "sabores": "https://drive.google.com/file/d/1N6qEybjmNbY7bCKHzxYsDHnqWgU7HajP/view",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -413,7 +413,7 @@
         ]
     },
     {
-        "id":12,
+        "id": 12,
         "nombre": "Heladeria Franep's",
         "rangoPrecio": "$$",
         "direccion": "Carlos H. Rodríguez 28",
@@ -428,7 +428,7 @@
         "logoUrl": "imagenes/Franeps.jpg",
         "sabores": "https://www.pedidosya.com.ar/restaurantes/neuquen/franeps-e888aa24-fd44-4b5e-bedf-c9246dfd0286-menu",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -441,7 +441,7 @@
         ]
     },
     {
-        "id":13,
+        "id": 13,
         "nombre": "Fiore Helados",
         "rangoPrecio": "$$$$",
         "direccion": "Avenida Argentina 16",
@@ -456,7 +456,7 @@
         "logoUrl": "imagenes/Fiore.jpg",
         "sabores": "https://fiore.com.ar/#productos",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -469,7 +469,7 @@
         ]
     },
     {
-        "id":14,
+        "id": 14,
         "nombre": "Roma Heladerias",
         "rangoPrecio": "$$$",
         "direccion": "Av. Coronel Olascoaga 1120",
@@ -484,7 +484,7 @@
         "logoUrl": "imagenes/Roma.jpg",
         "sabores": "https://www.instagram.com/p/CHdKApsn8Jf/",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -497,14 +497,14 @@
         ]
     },
     {
-        "id":15,
+        "id": 15,
         "nombre": "Costa Piré",
         "rangoPrecio": "$$$$",
         "direccion": "Av. Coronel Olascoaga 1809",
         "horaApertura": 10,
         "horaCierre": 24,
         "telefono": "0299 442-9333",
-         "gmail": "pirePatagonia@gmail",
+        "gmail": "pirePatagonia@gmail",
         "puntuacion": 4.5,
         "info": "Piré es una empresa familiar con presencia en la Patagonia desde 1986. El objetivo principal es ofrecer el mejor helado artesanal y un excelente servicio. Para lograrlo, cuestan con una amplia gama de productos. Más de 50 sabores y variedades tales como postres, alfajores, bombones, palitos helados, tortas, chocolates y opciones saladas. Tienen puntos de venta en las provincias de Neuquén y Río Negro.",
         "instagram": "heladeriaspire",
@@ -512,7 +512,7 @@
         "logoUrl": "imagenes/Pire.png",
         "sabores": "https://pirepatagonia.com.ar/sabores.php",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -525,7 +525,7 @@
         ]
     },
     {
-        "id":16,
+        "id": 16,
         "nombre": "Dulce Malvina",
         "rangoPrecio": "$$$",
         "direccion": "Ministro Joaquín V. González 26",
@@ -540,7 +540,7 @@
         "logoUrl": "imagenes/DulceMalvina.jpg",
         "sabores": "https://dulcemalvina.com.ar/menu-de-productos/helados/",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -553,7 +553,7 @@
         ]
     },
     {
-        "id":17,
+        "id": 17,
         "nombre": "Lucciano's Paseo de la Costa",
         "rangoPrecio": "$$$$$",
         "direccion": "Cabo Segundo Lopez 2119",
@@ -568,7 +568,7 @@
         "logoUrl": "imagenes/Luccianos.png",
         "sabores": "https://luccianos.net/en/products?c=all",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -581,7 +581,7 @@
         ]
     },
     {
-        "id":18,
+        "id": 18,
         "nombre": "Eletto",
         "rangoPrecio": "$$",
         "direccion": "V, Chrestia 510",
@@ -596,7 +596,7 @@
         "logoUrl": "imagenes/Eletto.jpg",
         "sabores": "https://eletto.ar/sabores.html",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -609,7 +609,7 @@
         ]
     },
     {
-        "id":19,
+        "id": 19,
         "nombre": "Grido Helados",
         "rangoPrecio": "$",
         "direccion": "Bartolomé Mitre 395",
@@ -624,7 +624,7 @@
         "logoUrl": "imagenes/Grido.png",
         "sabores": "https://argentina.gridohelado.com/productos/",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -637,7 +637,7 @@
         ]
     },
     {
-        "id":20,
+        "id": 20,
         "nombre": "Mikelo",
         "rangoPrecio": "$$$$",
         "direccion": "Gdor. Elordi 605",
@@ -652,7 +652,7 @@
         "logoUrl": "imagenes/Mikelo.jpg",
         "sabores": "https://drive.google.com/file/d/1N6qEybjmNbY7bCKHzxYsDHnqWgU7HajP/view",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
@@ -665,7 +665,7 @@
         ]
     },
     {
-        "id":21,
+        "id": 21,
         "nombre": "Helados Jauja",
         "rangoPrecio": "$$",
         "direccion": "Carlos H. Rodríguez 568",
@@ -680,7 +680,7 @@
         "logoUrl": "imagenes/Jauja.jpg",
         "sabores": "https://www.jauja.com.ar/helados/",
         "resenias": [
-             {
+            {
                 "nombre": "",
                 "descripcion": "",
                 "puntuacion": 4
