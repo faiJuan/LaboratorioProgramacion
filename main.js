@@ -16,7 +16,6 @@ fetch('./heladerias.json')
 
 function mostrarPagina(pagina) {
     contenedor.innerHTML = ''; 
-
     const inicio = (pagina - 1) * HELADERIAS_POR_PAGINA;
     const fin = inicio + HELADERIAS_POR_PAGINA;
     const heladeriasPagina = heladeriasGlobal.slice(inicio, fin);
@@ -34,7 +33,7 @@ function mostrarPagina(pagina) {
               <li id=${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)}> ${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)} </li>
           </ul>
       </div>
-      <a class="botonInfo" href="archivosHtml/${heladeria.nombre.split(' ').join('').toLowerCase()}Info.html" target="_blank">info</a>
+      <a class="botonInfo" href="./archivosHtml/heladeriaInfo${heladeria.id}.html" target="_blank">info</a>
     `;
         contenedor.appendChild(nuevaH);
     }
