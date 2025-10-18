@@ -33,9 +33,14 @@ function mostrarPagina(pagina) {
               <li id=${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)}> ${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)} </li>
           </ul>
       </div>
-      <a class="botonInfo" href="./archivosHtml/heladeriaInfo${heladeria.id}.html" target="_blank">info</a>
     `;
-        contenedor.appendChild(nuevaH);
+    const botoninfo=document.createElement("a");
+    botoninfo.innerText="info";
+    botoninfo.classList.add("botonInfo");
+    botoninfo.href=`archivosHtml/heladeriaInfo.html?id=${heladeria.id}`;
+    botoninfo.target="_blank";
+    nuevaH.appendChild(botoninfo);
+    contenedor.appendChild(nuevaH);
     }
 }
 
