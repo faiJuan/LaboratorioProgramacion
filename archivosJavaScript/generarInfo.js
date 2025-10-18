@@ -32,8 +32,8 @@ function cargarInfo(heladeria){
             <div class="informacion">
                 <p>${heladeria.info}</p>
                 <ul>
-                    <li>Direccion: ${heladeria.direccion}</li>
-                    <li>${heladeria.puntuacion}</li>
+                    <li>Dirección: ${heladeria.direccion}</li>
+                    <li>Puntuación: ${heladeria.puntuacion}</li>
                 </ul>
                 <div class="Contactos">
                     <li><img class="ContactosImg" src="./imagenes/gmail.png"
