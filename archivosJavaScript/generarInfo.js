@@ -1,39 +1,39 @@
 const seccion = document.getElementById('Sec1');
 const params = new URLSearchParams(window.location.search);
 const id = parseInt(params.get("id"));
-heladeriasGlobal = [];  
-let heladeria={};
-console.log(id);
-fetch('./archivosJson/heladerias.json')
-  .then(response => response.json()) 
-  .then(heladerias => {
-        heladeriasGlobal = heladerias;
-        let encontrado=false;
-        let contador=0;
-        while(!encontrado){
-                if(id===heladeriasGlobal[contador].id){
-                        encontrado=true;
-                        heladeria=heladeriasGlobal[contador];
-                }else{
-                        contador++;
-                }
-        }
-        cargarInfo(heladeria);
-    
-})
-  .catch(error => console.error('Error cargando el JSON:', error));
+heladeriasGlobal = [];
+let heladeria = {};
 
-function cargarInfo(heladeria){
-        seccion.innerHTML=`<h2 class="titulo">${heladeria.nombre}</h2>`;
+fetch('./archivosJson/heladerias.json')
+        .then(response => response.json())
+        .then(heladerias => {
+                heladeriasGlobal = heladerias;
+                let encontrado = false;
+                let contador = 0;
+                while (!encontrado) {
+                        if (id === heladeriasGlobal[contador].id) {
+                                encontrado = true;
+                                heladeria = heladeriasGlobal[contador];
+                        } else {
+                                contador++;
+                        }
+                }
+                cargarInfo(heladeria);
+
+        })
+        .catch(error => console.error('Error cargando el JSON:', error));
+
+function cargarInfo(heladeria) {
+        seccion.innerHTML = `<h2 class="titulo">${heladeria.nombre}</h2>`;
         const organizador = document.createElement("div");
         organizador.classList.add("organizador");
-        organizador.innerHTML+=`
+        organizador.innerHTML += `
             <img class="imagen" src="./${heladeria.logoUrl}" alt="Logo heladeria ${heladeria.nombre}" />
             <div class="informacion">
                 <p>${heladeria.info}</p>
                 <ul>
                     <li>Dirección: ${heladeria.direccion}</li>
-                    <li>Puntuación: ${heladeria.puntuacion}</li>
+                    <li>Puntuación: ${calcularPuntuacion(heladeria.resenias)}</li>
                 </ul>
                 <div class="Contactos">
                     <li><img class="ContactosImg" src="./imagenes/gmail.png"
@@ -48,5 +48,13 @@ function cargarInfo(heladeria){
                     alt="imagen bocha de helado sabores ${heladeria.nombre}" /></a>
         `;
         seccion.appendChild(organizador);
-        seccion.innerHTML+=`<a class="BotonSec" href="#Sec2"> Reseñas </a>`;
+        seccion.innerHTML += `<a class="BotonSec" href="#Sec2"> Reseñas </a>`;
 };
+
+function calcularPuntuacion(resenias) {
+        let result = 0;
+        for (const resenia of resenias) {
+                result += resenia.puntuacion;
+        }
+        return (result / resenias.length).toFixed(1);
+}
