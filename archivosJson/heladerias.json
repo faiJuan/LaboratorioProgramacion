@@ -227,7 +227,16 @@
         "logoUrl": "imagenes/Heidi.webp",
         "sabores": "https://heidiheladerias.com/cremas-heladas/",
         "resenias": [
-            
+            {
+                "nombre": "Patricia M",
+                "descripcion": "Excelente lugar! Los helados son exquisitos! La atención del personal es muy buena, nos atendieron rápido y  muy amables. Además los baños estaban impecables, para mi eso siempre es un punto a favor. Siempre da gusto volver con la familia!",
+                "puntuacion": 5
+            },
+            {
+                "nombre": "Martin C",
+                "descripcion": "Fuimos por una capelina, bastante completa y abundante, 4 bochas, ensalada de frutas, crema, rocklets y salsas. Los helados muy ricos. Recomiendo",
+                "puntuacion": 4
+            }
         ]
     },
     {
@@ -246,13 +255,13 @@
         "sabores": "https://www.facebook.com/HeladosGioNeuquen/?ref=_xav_ig_profile_page_web#",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Dario F",
+                "descripcion": "Los mejores helados de Neuquén!!! La atención es excelente!!! Cuando vivía allá, caminaba 2 Km para comprarlos, ahora que vivo más lejos, sigo yendo. No tienen comparación!!! Épicos!!!",
+                "puntuacion": 5
             },
             {
-                "nombre": "",
-                "descripcion": "",
+                "nombre": "Marcos C",
+                "descripcion": "Buena propuesta y apuesta comparada con los locales de la competencia concentrados más en el centro. Helado muy rico.",
                 "puntuacion": 4
             }
         ]
@@ -273,14 +282,19 @@
         "sabores": "https://fiore.com.ar/#productos",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Luis B",
+                "descripcion": "Una de las heladerías top de Neuquén, agradable atención, entre por primera vez y la chica fue muy paciente ante mis preguntas, pues la carta de sabores en helados es amplia y con sabores únicos. Puedes elegir entre diferentes presentaciones y todas con dos sabores. Aunque fui por helado vi que tienen una amplia variedad de postres y hasta cócteles con licor helados! Los precios van acorde a la calidad del helado, es artesanal y muy bueno.",
+                "puntuacion": 5
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Samuel L",
+                "descripcion": "la carta tiene como 50 sabores pero casi todos están tapados incluyendo el dulce de leche!!!... terminás eligiendo por descarte mas que por ganas. Ricos los helados... pero entre lo que prometen y lo que realmente tienen hay un abismo!!!",
+                "puntuacion": 2
+            },
+            {
+                "nombre": "Lucio C",
+                "descripcion": "Excelente atención, abierto hasta tarde y aceptan tarjeta! Uno de los helados más ricos que he probado en la región, bien cremoso, nada que ver con un helado de agua... abrió hace poco el local parece, tiene bastante variedad en gustos tradicionales y un buen espacio para disfrutar el helado/batido, tanto adentro, como afuera del local. Bien ubicado, zona segura. Muy recomendable.",
+                "puntuacion": 5
             }
         ]
     },
@@ -300,14 +314,14 @@
         "sabores": "https://www.instagram.com/stories/highlights/18041079161211494/?hl=en",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Dalila P",
+                "descripcion": "Unos genios los dueños!! AMO que tengan tanta variedad de gustos sin TACC, todos los recaudos para que los celíacos estemos tranquilos y una atención excelente!!",
+                "puntuacion": 5
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Nahuel U",
+                "descripcion": "Helados 7 puntos, a un precio muy razonable. La atencion es muy buena.",
+                "puntuacion": 3
             }
         ]
     },
@@ -327,13 +341,13 @@
         "sabores": "https://www.heladosilcandore.com.ar/carta/",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Ximena T",
+                "descripcion": "Lindo lugar pero los helados son muy desabridos, es más rico chupar un limón",
+                "puntuacion": 2
             },
             {
-                "nombre": "",
-                "descripcion": "",
+                "nombre": "Romina F",
+                "descripcion": "Muy buena atención y precios, helados muy ricos.",
                 "puntuacion": 4
             }
         ]
@@ -354,14 +368,14 @@
         "sabores": "https://dulcemalvina.com.ar/menu-de-productos/helados/",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
+                "nombre": "Juan V",
+                "descripcion": "Buen local. Variado los sabores de helados y muy deliciosos. Barras heladas piononos y más. Precios moderados. Precio módico. Lugar cómodo y agradable",
                 "puntuacion": 4
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Dafne A",
+                "descripcion": "Buena atención de los chicos y rico el helado, lo único el olor horrible que hay afuera, el local por adentro no me parece tan lindo, pero los helados riquísimos",
+                "puntuacion": 3
             }
         ]
     },
@@ -381,14 +395,19 @@
         "sabores": "https://drive.google.com/file/d/1N6qEybjmNbY7bCKHzxYsDHnqWgU7HajP/view",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Melany P",
+                "descripcion": "Excelente la atención, y todo muy rico. Y nos dieron un regalo de helado muchas gracias ! Recomendado 10/10",
+                "puntuacion": 5
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Renato C",
+                "descripcion": "Lindo local, buena atención. El helado es bueno, nada del otro mundo por el precio esperaba algo mejor. El chocolate Dubai tiene una cobertura de baño sabor chocolate que es horrible, por el precio que cobran deberían usar chocolate de verdad y no esa porquería que parece plástico, son esos pequeños detalles los que hacen la diferencia entre algo muy bueno y algo malo.",
+                "puntuacion": 3
+            },
+            {
+                "nombre": "Florencia P",
+                "descripcion": "La atención en esta heladería es un diez, super amables y con buena onda. Probé el helado de pistacho y me voló la cabeza: cremoso, con un sabor intenso de verdad, y lo mejor… ¡tiene trocitos de pistacho! Se nota que usan buenos ingredientes. Un lujo.",
+                "puntuacion": 5
             }
         ]
     },
@@ -408,14 +427,14 @@
         "sabores": "https://www.pedidosya.com.ar/restaurantes/neuquen/franeps-e888aa24-fd44-4b5e-bedf-c9246dfd0286-menu",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Luis B",
+                "descripcion": "El lugar es bonito, agradable decoración y buena atención. Doy me evaluación por los helados, su carta es amplia, 28 sabores. Pedí de chocolate blanco con frambuesa pero, el sabor era a crema pura y muy poca frambuesa, puede que tengan otros sabores mejores, pero este no es tan bueno como creí.",
+                "puntuacion": 3
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Ana S",
+                "descripcion": "Deliciosos helados! Destaco la calidad de los ingredientes utilizados (los sabores se sienten verdaderamente naturales), y también la elaboración: se perciben las frutas y se disfrutan las cremas. Excelente y cuidada atención!! Un lugar para visitar!!",
+                "puntuacion": 5
             }
         ]
     },
@@ -435,14 +454,14 @@
         "sabores": "https://fiore.com.ar/#productos",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Diego R",
+                "descripcion": "Muy buena atención, un lugar cómodo y tranquilo para disfrutar en familia y con amigos. Son riquísimos los helados.",
+                "puntuacion": 5
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Candela A",
+                "descripcion": "La atención de las chicas genial. Me decepcionó un montón el sabor del helado.  Decayó muchísimo. Algo que parecía mas bien artesanal ahora parece cualquier cosa, el chocolate blanco tiene un sabor a grasa tremendo, incomible.",
+                "puntuacion": 2
             }
         ]
     },
@@ -462,14 +481,14 @@
         "sabores": "https://www.instagram.com/p/CHdKApsn8Jf/",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Lucas T",
+                "descripcion": "Buena calidad del helado... Atención mejorable...",
+                "puntuacion": 3
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Julieta C",
+                "descripcion": "Riquisimos sabores de helado y muy buena atención",
+                "puntuacion": 5
             }
         ]
     },
@@ -489,13 +508,13 @@
         "sabores": "https://pirepatagonia.com.ar/sabores.php",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Antonella Z",
+                "descripcion": "Siempre es un placer ir a disfrutar de sus ricos helados. Los precios no son caros en comparación con la calidad. Homestamente no recuerdo lo que me pedí, solo me acuerdo del chocolate rocher que estaba buenísimo",
+                "puntuacion": 5
             },
             {
-                "nombre": "",
-                "descripcion": "",
+                "nombre": "Jorge S",
+                "descripcion": "Los helados de Pire , a.mi gusto , creo que están un escalón arriba de la competencia. La o el mousse de chocolate el mejor de todos ( difícil de encontrar) combinado con banana Split ... exquisito. Con respecto a este local muy lindo , casi todo vidriado , un parque con juegos para niños detrás y podes comprar sin bajarte del auto. A veces se llena mucho y se demora la atención.",
                 "puntuacion": 4
             }
         ]
@@ -516,13 +535,13 @@
         "sabores": "https://dulcemalvina.com.ar/menu-de-productos/helados/",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
+                "nombre": "Micaela G",
+                "descripcion": "El helado muy rico como siempre! La atención como en todos lados, algunos super atentos otros con pocas ganas.",
                 "puntuacion": 4
             },
             {
-                "nombre": "",
-                "descripcion": "",
+                "nombre": "Carlos A",
+                "descripcion": "Helado de buena calidad. Al local le falta mejorar la estética.",
                 "puntuacion": 4
             }
         ]
@@ -543,13 +562,18 @@
         "sabores": "https://luccianos.net/en/products?c=all",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Tamara K",
+                "descripcion": "La verdad que es una excelente atención siempre que voy son muy amables y con toda la predisposición en dar a probar algún helado. Están en los detalles de darte servilletas y todo lo necesario para una linda experiencia. A la mañana es re tranqui para ir y ver la bella vista desde el primer piso",
+                "puntuacion": 5
             },
             {
-                "nombre": "",
-                "descripcion": "",
+                "nombre": "Belen C",
+                "descripcion": "Heladería de excelente calidad, tanto en sus productos como en la atención. Los precios son acordes a lo que ofrecen. La ambientación del lugar es muy linda y acompaña perfectamente la calidad del producto. Muy recomendable",
+                "puntuacion": 5
+            },
+            {
+                "nombre": "Emmanuel B",
+                "descripcion": "El helado es rico, pero por el precio debería ser el mejor helado del mundo y no lo es.",
                 "puntuacion": 4
             }
         ]
@@ -570,14 +594,14 @@
         "sabores": "https://eletto.ar/sabores.html",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Hugo F",
+                "descripcion": "El helado es muy rico, el problema es que el lugar deberia mejorarse. Cuando esta el dueño los empleados casi que te sirven menos del KG, anda mirando hasta el ultimo gramo y es molesto.",
+                "puntuacion": 3
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Maria F",
+                "descripcion": "Muy ricos helados artesanales! Tienen variedad de gustos, tradicionales y otros gustos combinados para los osados que les guste probar sabores diferentes! Muy buena atención y el lugar muy higiénico. Da para sentarse tranquilo a tomarse un heladito allí en las mesas.",
+                "puntuacion": 5
             }
         ]
     },
@@ -597,14 +621,14 @@
         "sabores": "https://argentina.gridohelado.com/productos/",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
+                "nombre": "Emily L",
+                "descripcion": "Si bien los helados no son los más ricos, destaco las tortas heladas. Son muy buenas, y económicas... De los locales puedo decir que siempre están full de gente y descuidan mucho la limpieza de las mesas y sobre todo de los baños. No recomiendo quedarse a tomar el helado en el lugar. Demasiado concurrido y poca higiene en espacios comunes.",
                 "puntuacion": 4
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "William S",
+                "descripcion": "Buena calidad. Bastante económico. Fácil de llegar, en pleno centro. Buena atención y limpieza. Lo único negativo es que en horarios pico podés estar hasta 40 minutos esperando un helado. Deberían reforzar personal.",
+                "puntuacion": 3
             }
         ]
     },
@@ -624,13 +648,13 @@
         "sabores": "https://drive.google.com/file/d/1N6qEybjmNbY7bCKHzxYsDHnqWgU7HajP/view",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Ivana L",
+                "descripcion": "Tremendos helados, el chocolate con pistacho es tremendamente rico, todos con mucha crema y sabores exquisitos. Me encantó",
+                "puntuacion": 5
             },
             {
-                "nombre": "",
-                "descripcion": "",
+                "nombre": "Pedro F",
+                "descripcion": "Lindo lugar, con excelente variedad de helados, los precios están accesibles, el personal de 10.",
                 "puntuacion": 4
             }
         ]
@@ -651,14 +675,14 @@
         "sabores": "https://www.jauja.com.ar/helados/",
         "resenias": [
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Cielo A",
+                "descripcion": "Atención cordial, faltaría asientos para tomar dentro el helado en época fría.",
+                "puntuacion": 3
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "puntuacion": 4
+                "nombre": "Agustin B",
+                "descripcion": "Riquísimo el helado y económico. Descuento los miércoles. Nos atendieron muy bien, recomendado!",
+                "puntuacion": 5
             }
         ]
     }
