@@ -1,4 +1,5 @@
-const seccion = document.getElementById('Sec1');
+const seccion1 = document.getElementById('Sec1');
+const seccion2 = document.getElementById('Sec2');
 const params = new URLSearchParams(window.location.search);
 const id = parseInt(params.get("id"));
 heladeriasGlobal = [];
@@ -19,12 +20,13 @@ fetch('./archivosJson/heladerias.json')
                         }
                 }
                 cargarInfo(heladeria);
+                cargarResenias(heladeria);
 
         })
         .catch(error => console.error('Error cargando el JSON:', error));
 
 function cargarInfo(heladeria) {
-        seccion.innerHTML = `<h2 class="titulo">${heladeria.nombre}</h2>`;
+        seccion1.innerHTML = `<h2 class="titulo">${heladeria.nombre}</h2>`;
         const organizador = document.createElement("div");
         organizador.classList.add("organizador");
         organizador.innerHTML += `
@@ -37,7 +39,7 @@ function cargarInfo(heladeria) {
                 </ul>
                 <div class="Contactos">
                     <li><img class="ContactosImg" src="./imagenes/gmail.png"
-                            alt="imagen del correo electronico" />${heladeria.gmail} </li>
+                            alt="imagen del correo electronico" />${heladeria.gmail}</li>
                     <li><img class="ContactosImg" src="./imagenes/telefono.png"
                             alt="imagen del telefono" />${heladeria.telefono}</li>
                     <li><img class="ContactosImg" src="./imagenes/ig.png"
@@ -47,8 +49,8 @@ function cargarInfo(heladeria) {
             <a href="${heladeria.sabores}" target="_blank"><img class="sabores" src="./imagenes/sabores.png"
                     alt="imagen bocha de helado sabores ${heladeria.nombre}" /></a>
         `;
-        seccion.appendChild(organizador);
-        seccion.innerHTML += `<a class="BotonSec" href="#Sec2"> Reseñas </a>`;
+        seccion1.appendChild(organizador);
+        seccion1.innerHTML += `<a class="BotonSec" href="#Sec2"> Reseñas </a>`;
 };
 
 function calcularPuntuacion(resenias) {
@@ -58,3 +60,20 @@ function calcularPuntuacion(resenias) {
         }
         return (result / resenias.length).toFixed(1);
 }
+
+function cargarResenias(heladeria) {
+        const organizador = document.createElement("div");
+        organizador.classList.add("ContenedorResenias");
+        organizador.innerHTML = `<p class="ReseniaCliente"> Aca va a ir la caja donde el cliente puede agregar su reseña ~ en proceso de
+                creacion </p>`;
+        for (const resenia of heladeria.resenias) {
+                organizador.innerHTML += `<p class="Resenia"> "${resenia.descripcion}" 
+                                        <br>— ${resenia.nombre}.
+                                        <br>Puntuacion: ${resenia.puntuacion} </p>`;
+        }
+        seccion2.appendChild(organizador);
+        /*arreglo temporal para que vuelva al principio de la pagina, idealmente queriamos tener href="#header"
+          pero no funciona, y hacer a #Sec1 queda muy abajo*/
+        seccion2.innerHTML += `<a class="BotonSec" href="./heladeriaInfo.html?id=${heladeria.id}"> Volver </a>`;
+}
+

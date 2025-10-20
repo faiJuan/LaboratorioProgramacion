@@ -24,16 +24,15 @@ function mostrarPagina(pagina) {
         const nuevaH = document.createElement("div");
         nuevaH.classList.add("cuadro");
         nuevaH.innerHTML = `
-      <h2 class="titulo">${heladeria.nombre}</h2>
-      <div class="contenido">
-          <img src="${heladeria.logoUrl}" alt="logo ${heladeria.nombre}" class="imagen">
-          <ul class="info">
-              <li><b>Rango de precios:</b> ${heladeria.rangoPrecio}</li>
-              <li><b>Dirección:</b> ${heladeria.direccion}</li>
-              <li id=${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)}> ${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)} </li>
-          </ul>
-      </div>
-    `;
+        <h2 class="titulo">${heladeria.nombre}</h2>
+        <div class="contenido">
+            <img src="${heladeria.logoUrl}" alt="logo ${heladeria.nombre}" class="imagen">
+            <ul class="info">
+                <li><b>Rango de precios:</b> ${heladeria.rangoPrecio}</li>
+                <li><b>Dirección:</b> ${heladeria.direccion}</li>
+                <li id=${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)}> ${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)} </li>
+            </ul>
+        </div>`;
         const botoninfo = document.createElement("a");
         botoninfo.innerText = "info";
         botoninfo.classList.add("botonInfo");
@@ -47,7 +46,7 @@ function mostrarPagina(pagina) {
 function crearBotonesPaginacion(totalHeladerias) {
     paginacion.innerHTML = '';
     const totalPaginas = Math.ceil(totalHeladerias / HELADERIAS_POR_PAGINA);
-    //Boton Anterior
+   
     const btnAnterior = document.createElement('button');
     btnAnterior.textContent = '<';
     btnAnterior.disabled = paginaActual === 1;
@@ -60,7 +59,6 @@ function crearBotonesPaginacion(totalHeladerias) {
     });
     paginacion.appendChild(btnAnterior);
 
-    //Botones numéricos de página
     for (let i = 1; i <= totalPaginas; i++) {
         const btn = document.createElement('button');
         btn.textContent = i;
@@ -73,7 +71,6 @@ function crearBotonesPaginacion(totalHeladerias) {
         paginacion.appendChild(btn);
     }
 
-    //Boton Siguiente
     const btnSiguiente = document.createElement('button');
     btnSiguiente.textContent = '>';
     btnSiguiente.disabled = paginaActual === totalPaginas;
@@ -87,7 +84,7 @@ function crearBotonesPaginacion(totalHeladerias) {
     paginacion.appendChild(btnSiguiente);
 }
 
-//Funcion para saber si la heladeria esta abierta o cerrada -- HAY Q ARREGLAR el tema de los horarios del json
+//Funcion para saber si la heladeria esta abierta o cerrada -- Hay que arreglar la carga de los horarios del json
 function estaAbierto(abre, cierra) {
     let estado = "Cerrado";
     if (new Date().getHours() >= abre && new Date().getHours() < cierra) {
