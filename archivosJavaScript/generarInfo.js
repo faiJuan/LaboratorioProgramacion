@@ -1,35 +1,34 @@
-const seccion1 = document.getElementById('Sec1');
-const seccion2 = document.getElementById('Sec2');
+const seccion1 = document.getElementById("Sec1");
+const seccion2 = document.getElementById("Sec2");
 const params = new URLSearchParams(window.location.search);
 const id = parseInt(params.get("id"));
 heladeriasGlobal = [];
 let heladeria = {};
 
-fetch('./archivosJson/heladerias.json')
-        .then(response => response.json())
-        .then(heladerias => {
-                heladeriasGlobal = heladerias;
-                let encontrado = false;
-                let contador = 0;
-                while (!encontrado) {
-                        if (id === heladeriasGlobal[contador].id) {
-                                encontrado = true;
-                                heladeria = heladeriasGlobal[contador];
-                        } else {
-                                contador++;
-                        }
-                }
-                cargarInfo(heladeria);
-                cargarResenias(heladeria);
-
-        })
-        .catch(error => console.error('Error cargando el JSON:', error));
+fetch("./archivosJson/heladerias.json")
+	.then((response) => response.json())
+	.then((heladerias) => {
+		heladeriasGlobal = heladerias;
+		let encontrado = false;
+		let contador = 0;
+		while (!encontrado) {
+			if (id === heladeriasGlobal[contador].id) {
+				encontrado = true;
+				heladeria = heladeriasGlobal[contador];
+			} else {
+				contador++;
+			}
+		}
+		cargarInfo(heladeria);
+		cargarResenias(heladeria);
+	})
+	.catch((error) => console.error("Error cargando el JSON:", error));
 
 function cargarInfo(heladeria) {
-        seccion1.innerHTML = `<h2 class="titulo">${heladeria.nombre}</h2>`;
-        const organizador = document.createElement("div");
-        organizador.classList.add("organizador");
-        organizador.innerHTML += `
+	seccion1.innerHTML = `<h2 class="titulo">${heladeria.nombre}</h2>`;
+	const organizador = document.createElement("div");
+	organizador.classList.add("organizador");
+	organizador.innerHTML += `
             <img class="imagen" src="./${heladeria.logoUrl}" alt="Logo heladeria ${heladeria.nombre}" />
             <div class="informacion">
                 <p>${heladeria.info}</p>
@@ -49,31 +48,30 @@ function cargarInfo(heladeria) {
             <a href="${heladeria.sabores}" target="_blank"><img class="sabores" src="./imagenes/sabores.png"
                     alt="imagen bocha de helado sabores ${heladeria.nombre}" /></a>
         `;
-        seccion1.appendChild(organizador);
-        seccion1.innerHTML += `<a class="BotonSec" href="#Sec2"> Reseñas </a>`;
-};
+	seccion1.appendChild(organizador);
+	seccion1.innerHTML += `<a class="BotonSec" href="#Sec2"> Reseñas </a>`;
+}
 
 function calcularPuntuacion(resenias) {
-        let result = 0;
-        for (const resenia of resenias) {
-                result += resenia.puntuacion;
-        }
-        return (result / resenias.length).toFixed(1);
+	let result = 0;
+	for (const resenia of resenias) {
+		result += resenia.puntuacion;
+	}
+	return (result / resenias.length).toFixed(1);
 }
 
 function cargarResenias(heladeria) {
-        const organizador = document.createElement("div");
-        organizador.classList.add("ContenedorResenias");
-        organizador.innerHTML = `<p class="ReseniaCliente"> Aca va a ir la caja donde el cliente puede agregar su reseña ~ en proceso de
+	const organizador = document.createElement("div");
+	organizador.classList.add("ContenedorResenias");
+	organizador.innerHTML = `<p class="ReseniaCliente"> Aca va a ir la caja donde el cliente puede agregar su reseña ~ en proceso de
                 creacion </p>`;
-        for (const resenia of heladeria.resenias) {
-                organizador.innerHTML += `<p class="Resenia"> "${resenia.descripcion}" 
+	for (const resenia of heladeria.resenias) {
+		organizador.innerHTML += `<p class="Resenia"> "${resenia.descripcion}" 
                                         <br>— ${resenia.nombre}.
                                         <br>Puntuacion: ${resenia.puntuacion} </p>`;
-        }
-        seccion2.appendChild(organizador);
-        /*arreglo temporal para que vuelva al principio de la pagina, idealmente queriamos tener href="#header"
-          pero no funciona, y hacer a #Sec1 queda muy abajo*/
-        seccion2.innerHTML += `<a class="BotonSec" href="./heladeriaInfo.html?id=${heladeria.id}"> Volver </a>`;
+	}
+	seccion2.appendChild(organizador);
+	/*arreglo temporal para que vuelva al principio de la pagina, idealmente queriamos tener href="#header"
+					pero no funciona, y hacer a #Sec1 queda muy abajo*/
+	seccion2.innerHTML += `<a class="BotonSec" href="./heladeriaInfo.html?id=${heladeria.id}"> Volver </a>`;
 }
-

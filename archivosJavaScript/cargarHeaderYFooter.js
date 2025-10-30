@@ -2,19 +2,19 @@ const header = document.getElementById('header');
 const footer = document.getElementById('footer');
 
 header.innerHTML = `
-        <img class="Logo" src="./imagenes/logo.png" alt="logo" />
-        <div class="Gelato">
-            <h1>Gelato</h1>
-        </div>
-        <div class="Separador"></div>
-        <nav>
-            <ul>
-                <li><a href="./index.html"><img class="ImagenCabecera" src="./imagenes/casa.svg" alt="inicio" />Inicio</a>
-                </li>
-                <li><a><img class="ImagenCabecera" src="./imagenes/lupa.svg" alt="buscar" />Buscar</a></li>
-                <li><a><img class="ImagenCabecera" src="./imagenes/star.png" alt="star" /></a></li>
-            </ul>
-        </nav>`;
+    <img class="Logo" src="./imagenes/logo.png" alt="logo" />
+    <div class="Gelato">
+        <h1>Gelato</h1>
+    </div>
+    <div class="Separador"></div>
+    <nav>
+        <ul>
+            <li><a href="./index.html"><img class="ImagenCabecera" src="./imagenes/casa.svg" alt="inicio" />Inicio</a>
+            </li>
+            <li><a><img class="ImagenCabecera" src="./imagenes/lupa.svg" alt="buscar" />Buscar</a></li>
+            <li><a><img class="ImagenCabecera" src="./imagenes/star.png" alt="star" /></a></li>
+        </ul>
+    </nav>`;
 
 fetch('./archivosJson/footer.json')
     .then(response => response.json())
