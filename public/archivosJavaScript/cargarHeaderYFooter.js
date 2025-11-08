@@ -17,7 +17,7 @@ header.innerHTML = `
         </ul>
     </nav>`;
 
-fetch('./archivosJson/footer.json')
+fetch('/api/footer')
     .then(response => response.json())
     .then(integrantes => {
         footer.innerHTML = `

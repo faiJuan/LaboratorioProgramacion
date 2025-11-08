@@ -5,7 +5,7 @@ let paginaActual = 1;
 let heladeriasGlobal = []; //para no mandar por parametro las heladerias
 let heladeriasFiltradas = [] //para guardar las heladerias que se deben mostrar segun coincidencia con el buscador
 
-fetch("/api/heladerias")
+fetch('/api/heladerias')
 	.then((response) => response.json())
 	.then((heladerias) => {
 		heladeriasGlobal = heladerias;
