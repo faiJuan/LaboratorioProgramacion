@@ -4,7 +4,7 @@ const HELADERIAS_POR_PAGINA = 4;
 let paginaActual = 1;
 let heladeriasGlobal = []; //para no mandar por parametro las heladerias
 
-fetch("./archivosJson/heladerias.json")
+fetch("/api/heladerias")
 	.then((response) => response.json())
 	.then((heladerias) => {
 		heladeriasGlobal = heladerias;
