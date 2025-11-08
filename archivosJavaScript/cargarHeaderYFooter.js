@@ -9,10 +9,11 @@ header.innerHTML = `
     <div class="Separador"></div>
     <nav>
         <ul>
-            <li><a href="./index.html"><img class="ImagenCabecera" src="./imagenes/casa.svg" alt="inicio" />Inicio</a>
-            </li>
-            <li><a><img class="ImagenCabecera" src="./imagenes/lupa.svg" alt="buscar" />Buscar</a></li>
-            <li><a><img class="ImagenCabecera" src="./imagenes/star.png" alt="star" /></a></li>
+            <li><a href="./index.html"><img class="ImagenCabecera" src="./imagenes/casa.svg" alt="inicio" />Inicio</a></li>
+            <li class="search"><a id="busqueda"><img class="ImagenCabecera" src="./imagenes/lupa.svg" alt="buscar" />
+                <input type="text" placeholder="Buscar"></a></li>
+            <li><a><img class="ImagenCabecera" src="./imagenes/filtro.svg" alt="filtrar" />Ordenar</a></li>
+            <li><a id="aleatorio"><img class="ImagenCabecera" src="./imagenes/star.png" alt="star" /></a></li>
         </ul>
     </nav>`;
 
@@ -28,3 +29,11 @@ fetch('./archivosJson/footer.json')
         </div>`;
     })
     .catch(error => console.error('Error cargando el JSON:', error));
+
+document.getElementById('aleatorio').addEventListener('click', () => {
+    window.location.href = './heladeriaInfo.html?id=' + Math.floor(Math.random() * 20 + 1);
+});
+
+document.getElementById('busqueda').addEventListener('click', () => {
+
+});

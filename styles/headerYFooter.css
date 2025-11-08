@@ -124,3 +124,27 @@ footer {
   margin: 0;
   font-size: 18px;
 }
+
+nav a input {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: Tahoma, sans-serif;
+  margin-left: 8px;
+  background-color: rgba(233, 183, 185, 0.918);
+  color: white;
+}
+
+nav a input:focus {
+  background-color: rgb(228, 150, 154);
+}
+
+nav a input::placeholder {
+  color: white;
+}
+
+#busqueda {
+  width: auto;
+}

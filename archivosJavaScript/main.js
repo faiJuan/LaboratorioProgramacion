@@ -29,10 +29,10 @@ function mostrarPagina(pagina) {
             <ul class="info">
                 <li><b>Rango de precios:</b> ${heladeria.rangoPrecio}</li>
                 <li><b>Dirección:</b> ${heladeria.direccion}</li>
-                <li id=${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)}> ${estaAbierto(
-			heladeria.horaApertura,
-			heladeria.horaCierre
-		)} </li>
+				<li class="infoPuntuacion"><b>Puntuación:</b> ${calcularPuntuacion(heladeria.resenias)} 
+				<img class="puntuacion" src="./imagenes/estrella.svg" alt="estrella"/> </li>
+                <li id=${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)}> 
+				${estaAbierto(heladeria.horaApertura, heladeria.horaCierre)} </li>
             </ul>
         </div>`;
 		const botoninfo = document.createElement("a");
@@ -94,4 +94,12 @@ function estaAbierto(abre, cierra) {
 		estado = "Abierto";
 	}
 	return estado;
+}
+
+function calcularPuntuacion(resenias) {
+	let result = 0;
+	for (const resenia of resenias) {
+		result += resenia.puntuacion;
+	}
+	return (result / resenias.length).toFixed(1);
 }

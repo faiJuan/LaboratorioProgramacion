@@ -33,16 +33,17 @@ function cargarInfo(heladeria) {
             <div class="informacion">
                 <p>${heladeria.info}</p>
                 <ul>
-                    <li>Dirección: ${heladeria.direccion}</li>
-                    <li>Puntuación: ${calcularPuntuacion(heladeria.resenias)}</li>
+                    <li><i>Dirección:</i> ${heladeria.direccion}</li>
+                    <li><i>Puntuación:</i> ${calcularPuntuacion(heladeria.resenias)} 
+					<img class="puntuacion" src="./imagenes/estrella.svg" alt="estrella"/> </li>
                 </ul>
                 <div class="Contactos">
                     <li><img class="ContactosImg" src="./imagenes/gmail.png"
                             alt="imagen del correo electronico" />${heladeria.gmail}</li>
                     <li><img class="ContactosImg" src="./imagenes/telefono.png"
                             alt="imagen del telefono" />${heladeria.telefono}</li>
-                    <li><img class="ContactosImg" src="./imagenes/ig.png"
-                            alt="imagen de instagram" />${heladeria.instagram}</li>
+                    <li><a href="${heladeria.igUrl}" target="_blank"> <img class="ContactosImg" src="./imagenes/ig.png"
+                            alt="imagen de instagram" />${heladeria.instagram} </a></li>
                 </div>
             </div>
             <a href="${heladeria.sabores}" target="_blank"><img class="sabores" src="./imagenes/sabores.png"
