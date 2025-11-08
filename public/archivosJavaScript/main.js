@@ -3,13 +3,15 @@ const paginacion = document.getElementById("paginacion");
 const HELADERIAS_POR_PAGINA = 4;
 let paginaActual = 1;
 let heladeriasGlobal = []; //para no mandar por parametro las heladerias
+let heladeriasFiltradas = [] //para guardar las heladerias que se deben mostrar segun coincidencia con el buscador
 
-fetch("/api/heladerias")
+fetch('/api/heladerias')
 	.then((response) => response.json())
 	.then((heladerias) => {
 		heladeriasGlobal = heladerias;
+		heladeriasFiltradas = heladerias;		//agrego esto
 		mostrarPagina(paginaActual);
-		crearBotonesPaginacion(heladerias.length);
+		crearBotonesPaginacion(heladeriasFiltradas.length);	//cambio heladerias por heladeriasFiltradas
 	})
 	.catch((error) => console.error("Error cargando el JSON:", error));
 
@@ -17,7 +19,7 @@ function mostrarPagina(pagina) {
 	contenedor.innerHTML = "";
 	const inicio = (pagina - 1) * HELADERIAS_POR_PAGINA;
 	const fin = inicio + HELADERIAS_POR_PAGINA;
-	const heladeriasPagina = heladeriasGlobal.slice(inicio, fin);
+	const heladeriasPagina = heladeriasFiltradas.slice(inicio, fin);	//cambio heladeriasGlobal por heladeriasFiltradas
 
 	for (const heladeria of heladeriasPagina) {
 		const nuevaH = document.createElement("div");
@@ -103,3 +105,23 @@ function calcularPuntuacion(resenias) {
 	}
 	return (result / resenias.length).toFixed(1);
 }
+
+function filtrarHeladerias(textoIngresado) {		//agregado para filtrar heladerias
+	textoIngresado = textoIngresado.toLowerCase().trim();
+
+	if (textoIngresado === "") {
+		heladeriasFiltradas = heladeriasGlobal;
+	} else {
+		heladeriasFiltradas = heladeriasGlobal.filter((h) =>
+			h.nombre.toLowerCase().includes(textoIngresado)
+		);
+	}
+
+	paginaActual = 1;
+	mostrarPagina(paginaActual);
+	crearBotonesPaginacion(heladeriasFiltradas.length);
+}
+
+document.addEventListener("filtrarHeladerias", (evento) => {
+	filtrarHeladerias(evento.detail);
+});

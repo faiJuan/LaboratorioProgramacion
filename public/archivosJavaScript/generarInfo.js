@@ -2,26 +2,17 @@ const seccion1 = document.getElementById("Sec1");
 const seccion2 = document.getElementById("Sec2");
 const params = new URLSearchParams(window.location.search);
 const id = parseInt(params.get("id"));
-heladeriasGlobal = [];
-let heladeria = {};
 
-fetch("./archivosJson/heladerias.json")
+
+fetch(`/api/heladerias/${id}`)
 	.then((response) => response.json())
-	.then((heladerias) => {
-		heladeriasGlobal = heladerias;
-		let encontrado = false;
-		let contador = 0;
-		while (!encontrado) {
-			if (id === heladeriasGlobal[contador].id) {
-				encontrado = true;
-				heladeria = heladeriasGlobal[contador];
-			} else {
-				contador++;
-			}
-		}
+	.then((heladeria) => {
+		
 		cargarInfo(heladeria);
 		cargarResenias(heladeria);
+		
 	})
+	
 	.catch((error) => console.error("Error cargando el JSON:", error));
 
 function cargarInfo(heladeria) {

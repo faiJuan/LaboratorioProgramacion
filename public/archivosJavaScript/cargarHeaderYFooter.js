@@ -17,7 +17,7 @@ header.innerHTML = `
         </ul>
     </nav>`;
 
-fetch('./archivosJson/footer.json')
+fetch('/api/footer')
     .then(response => response.json())
     .then(integrantes => {
         footer.innerHTML = `
@@ -34,6 +34,14 @@ document.getElementById('aleatorio').addEventListener('click', () => {
     window.location.href = './heladeriaInfo.html?id=' + Math.floor(Math.random() * 20 + 1);
 });
 
-document.getElementById('busqueda').addEventListener('click', () => {
+const inputBusqueda = document.querySelector('#busqueda input');      //agregado para realizar busquedas de heladerias
 
+inputBusqueda.addEventListener("input", () => {
+    const texto = inputBusqueda.value;
+
+    const evento = new CustomEvent("filtrarHeladerias", {
+        detail: texto,
+    });
+
+    document.dispatchEvent(evento);
 });
