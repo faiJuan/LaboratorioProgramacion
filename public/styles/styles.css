@@ -75,7 +75,7 @@ body {
   font-weight: normal;
   font-family: 'Century Gothic', sans-serif;
   text-align: left;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .cuadro .info li {
