@@ -159,7 +159,7 @@
     "horaCierre": 24,
     "telefono": "0299 442-7519",
     "gmail": "gridoHeladosNeuquen@gmail.com",
-    "info": "Tiene como objetivo crecer y desarrollarse ofreciendo con calidad y calidez cremas heladas deliciosas, saludables y seguras. Así sus clientes vivirán momentos placenteros, en un ambiente agradable y familiar.",
+    "info": "Crecemos y nos desarrollamos ofreciendo con calidad y calidez cremas heladas deliciosas, saludables y seguras. Así nuestros clientes vivirán momentos placenteros, en un ambiente agradable y familiar.",
     "instagram": "gridohelados",
     "igUrl": "https://www.instagram.com/gridohelados/",
     "logoUrl": "imagenes/Grido.png",
@@ -462,11 +462,6 @@
         "nombre": "Candela A",
         "descripcion": "La atención de las chicas genial. Me decepcionó un montón el sabor del helado.  Decayó muchísimo. Algo que parecía mas bien artesanal ahora parece cualquier cosa, el chocolate blanco tiene un sabor a grasa tremendo, incomible.",
         "puntuacion": 2
-      },
-      {
-        "nombre": "nati",
-        "descripcion": "muy feo",
-        "puntuacion": 1
       }
     ]
   },
@@ -688,11 +683,6 @@
         "nombre": "Agustin B",
         "descripcion": "Riquísimo el helado y económico. Descuento los miércoles. Nos atendieron muy bien, recomendado!",
         "puntuacion": 5
-      },
-      {
-        "nombre": "nati",
-        "descripcion": "horrible todo",
-        "puntuacion": 0
       }
     ]
   }
