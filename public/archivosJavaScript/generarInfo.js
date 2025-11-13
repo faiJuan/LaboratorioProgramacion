@@ -3,16 +3,14 @@ const seccion2 = document.getElementById("Sec2");
 const params = new URLSearchParams(window.location.search);
 const id = parseInt(params.get("id"));
 
-
 fetch(`/api/heladerias/${id}`)
 	.then((response) => response.json())
 	.then((heladeria) => {
-		
+
 		cargarInfo(heladeria);
 		cargarResenias(heladeria);
-		
+
 	})
-	
 	.catch((error) => console.error("Error cargando el JSON:", error));
 
 function cargarInfo(heladeria) {
@@ -55,15 +53,92 @@ function calcularPuntuacion(resenias) {
 function cargarResenias(heladeria) {
 	const organizador = document.createElement("div");
 	organizador.classList.add("ContenedorResenias");
-	organizador.innerHTML = `<p class="ReseniaCliente"> Aca va a ir la caja donde el cliente puede agregar su reseña ~ en proceso de
-                creacion </p>`;
+
+	organizador.innerHTML = `
+		<h2>Reseñas de ${heladeria.nombre}</h2> 
+		<form class="ContenedorEscrituraResenia" id="form">
+			<div class="Entrada">
+				<textarea id="descripcion" name="descripcion" class="ReseniaCliente" cols="25" rows="5" maxlength="250" placeholder="Escribí tu reseña..." required></textarea>
+			</div>
+			<div class="OrdenarEtiquetas">
+				<div class="Entrada">	
+					<input type="text" id="nombre" name="nombre" required />	
+					<label for="nombre">Nombre:</label>
+				</div>
+				<div class="Entrada">
+					<input type="number" id="puntuacion" name="puntuacion" min="0" max="5" required />	
+					<label for="puntuacion">Puntuación:</label>
+				</div>
+			</div>
+			<div class="BotonesResenia">
+				<button type="submit" class="BotonPublicar">Publicar</button>
+				<button type="button" class="BotonCancelar">Cancelar</button>
+			</div>
+		</form>
+	`;
+
+	const lista = document.createElement("div");
+	lista.classList.add("ListaResenias");
 	for (const resenia of heladeria.resenias) {
-		organizador.innerHTML += `<p class="Resenia"> "${resenia.descripcion}" 
-                                        <br>— ${resenia.nombre}.
-                                        <br>Puntuacion: ${resenia.puntuacion} </p>`;
+		const p = document.createElement("p");
+		p.classList.add("Resenia");
+		p.innerHTML = `"${resenia.descripcion}"<br>— ${resenia.nombre}.<br>Puntuación: ${resenia.puntuacion} <img class="puntuacion" src="./imagenes/estrella.svg" alt="estrella"/>`;
+		lista.appendChild(p);
 	}
+
+	const form = organizador.querySelector("form");
+	form.addEventListener("submit", async (e) => {
+		e.preventDefault();
+		const formData = new FormData(form);
+		const nombre = formData.get("nombre");
+		const descripcion = formData.get("descripcion");
+		const puntuacion = formData.get("puntuacion");
+		try {
+			const response = await fetch(`/api/heladerias/${heladeria.id}/resenias`, {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({ nombre, descripcion, puntuacion }),
+			});
+			if (!response.ok) throw new Error("Error al enviar la reseña");
+			const result = await response.json();
+
+			const nuevaResenia = document.createElement("p");
+			nuevaResenia.classList.add("Resenia");
+			nuevaResenia.innerHTML = `"${descripcion}"<br>— ${nombre}.<br>Puntuación: ${puntuacion} <img class="puntuacion" src="./imagenes/estrella.svg" alt="estrella"/>`;
+			lista.appendChild(nuevaResenia);
+
+			form.reset();
+			avisoPublicacion("Tu reseña fue cargada correctamente!", "success");
+
+		} catch (error) {
+			console.error(error);
+			avisoPublicacion("Hubo un problema al publicar tu reseña", "error");
+		}
+	});
+	const botonCancelar = form.querySelector(".BotonCancelar");
+	botonCancelar.addEventListener("click", () => form.reset());
+
+	organizador.appendChild(lista);
+	seccion2.innerHTML = "";
 	seccion2.appendChild(organizador);
-	/*arreglo temporal para que vuelva al principio de la pagina, idealmente queriamos tener href="#header"
-					pero no funciona, y hacer a #Sec1 queda muy abajo*/
-	seccion2.innerHTML += `<a class="BotonSec" href="./heladeriaInfo.html?id=${heladeria.id}"> Volver </a>`;
+
+	const volverBtn = document.createElement("a");
+	volverBtn.classList.add("BotonSec");
+	volverBtn.href = `./heladeriaInfo.html?id=${heladeria.id}`;
+	volverBtn.textContent = "Volver";
+	seccion2.appendChild(volverBtn);
+}
+
+function avisoPublicacion(message, type) {
+	const msj = document.createElement("div");
+	msj.classList.add("avisoPublicacion", type);
+	msj.textContent = message;
+	document.body.appendChild(msj);
+
+	setTimeout(() => msj.classList.add("show"), 50);
+
+	setTimeout(() => {
+		msj.classList.remove("show");
+		setTimeout(() => msj.remove(), 500);
+	}, 4000);
 }

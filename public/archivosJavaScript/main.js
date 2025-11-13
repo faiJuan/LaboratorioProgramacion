@@ -108,7 +108,6 @@ function calcularPuntuacion(resenias) {
 
 function filtrarHeladerias(textoIngresado) {		//agregado para filtrar heladerias
 	textoIngresado = textoIngresado.toLowerCase().trim();
-
 	if (textoIngresado === "") {
 		heladeriasFiltradas = heladeriasGlobal;
 	} else {
@@ -116,7 +115,6 @@ function filtrarHeladerias(textoIngresado) {		//agregado para filtrar heladerias
 			h.nombre.toLowerCase().includes(textoIngresado)
 		);
 	}
-
 	paginaActual = 1;
 	mostrarPagina(paginaActual);
 	crearBotonesPaginacion(heladeriasFiltradas.length);

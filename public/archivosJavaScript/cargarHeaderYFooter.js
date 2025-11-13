@@ -10,12 +10,24 @@ header.innerHTML = `
     <nav>
         <ul>
             <li><a href="./index.html"><img class="ImagenCabecera" src="./imagenes/casa.svg" alt="inicio" />Inicio</a></li>
-            <li class="search"><a id="busqueda"><img class="ImagenCabecera" src="./imagenes/lupa.svg" alt="buscar" />
+            <li id="b" class="search"><a id="busqueda"><img class="ImagenCabecera" src="./imagenes/lupa.svg" alt="buscar" />
                 <input type="text" placeholder="Buscar"></a></li>
-            <li><a><img class="ImagenCabecera" src="./imagenes/filtro.svg" alt="filtrar" />Ordenar</a></li>
-            <li><a id="aleatorio"><img class="ImagenCabecera" src="./imagenes/star.png" alt="star" /></a></li>
+            <li id="o"><a id="ordenar"><img class="ImagenCabecera" src="./imagenes/filtro.svg" alt="filtrar" />Ordenar</a></li>
+            <li id="a"><a id="aleatorio"><img class="ImagenCabecera" src="./imagenes/star.png" alt="star" /></a></li>
         </ul>
     </nav>`;
+ocultar();
+
+function ocultar() {
+    const urlActual = window.location.href;
+    console.log(urlActual);
+    console.log(urlActual.includes('heladeriaInfo'));
+    if (urlActual.includes('heladeriaInfo')) {
+        document.getElementById("b").style.display = "none";
+        document.getElementById("o").style.display = "none";
+        document.getElementById("a").style.display = "none";
+    }
+}
 
 fetch('/api/footer')
     .then(response => response.json())
@@ -30,18 +42,15 @@ fetch('/api/footer')
     })
     .catch(error => console.error('Error cargando el JSON:', error));
 
-document.getElementById('aleatorio').addEventListener('click', () => {
+document.getElementById('aleatorio').addEventListener('click', () => {  //recomendacion aleatoria
     window.location.href = './heladeriaInfo.html?id=' + Math.floor(Math.random() * 20 + 1);
 });
 
 const inputBusqueda = document.querySelector('#busqueda input');      //agregado para realizar busquedas de heladerias
-
 inputBusqueda.addEventListener("input", () => {
     const texto = inputBusqueda.value;
-
     const evento = new CustomEvent("filtrarHeladerias", {
         detail: texto,
     });
-
     document.dispatchEvent(evento);
 });

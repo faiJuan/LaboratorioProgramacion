@@ -1,175 +1,314 @@
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	scrollbar-color: rgb(230, 161, 165) rgb(232, 207, 202);
 }
 
 h2 {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  color: rgb(119, 172, 230);
-  text-align: center;
-  font-size: 55px;
-  margin: 15px;
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 400;
+	color: rgb(119, 172, 230);
+	text-align: center;
+	font-size: 55px;
+	margin: 15px;
 }
 
 body {
-  background: rgb(252, 245, 236);
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  height: 100%;
+	background: rgb(252, 245, 236);
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	height: 100%;
 }
 
 .organizador {
-  display: flex;
-  height: 60%;
-  column-gap: 80px;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0px 20px 0px;
-  padding: 25px 10px 25px 10px;
-  background-color: rgb(217, 181, 143);
+	display: flex;
+	height: 60%;
+	column-gap: 60px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0px;
+	padding: 25px 10px;
+	background-color: rgb(217, 181, 143);
 }
 
 .imagen {
-  height: auto;
-  width: 250px;
-  border-radius: 50px;
-  padding: 1px;
+	height: auto;
+	width: 250px;
+	border-radius: 50px;
+	padding: 1px;
 }
 
 .informacion {
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 20px;
-  text-align: justify;
-  background-color: rgb(232, 205, 175);
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 15px 50px;
-  min-width: 700px;
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	background-color: rgb(232, 205, 175);
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 15px 50px;
+	min-width: 700px;
 }
 
 .informacion ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .puntuacion {
-  width: auto;
-  height: 20px;
-  margin: 1px 0px;
-  vertical-align: text-top;
+	width: auto;
+	height: 20px;
+	margin: 1px 0px;
+	vertical-align: text-top;
 }
 
 .sabores {
-  height: auto;
-  width: 250px;
-  border-radius: 50px;
-  padding: 1px;
-  transition: transform 0.5s linear;
+	height: auto;
+	width: 250px;
+	border-radius: 50px;
+	padding: 1px;
+	transition: transform 0.5s linear;
 }
 
 .sabores:hover {
-  transform: scale(1.30);
+	transform: scale(1.30);
 }
 
 section {
-  text-align: center;
+	text-align: center;
 }
 
 section ul {
-  margin: 15px;
-  padding: 0px;
+	margin: 15px;
+	padding: 0px;
 }
 
 ul ::marker {
-  color: rgb(119, 172, 230);
+	color: rgb(119, 172, 230);
 }
 
 #Sec1 {
-  height: 85vh;
+	height: 85vh;
 }
 
 #Sec2 {
-  height: auto;
-  margin-bottom: 20px;
+	height: auto;
+	margin-bottom: 20px;
 }
 
 .BotonSec {
-  display: inline-block;
-  background-color: rgb(230, 161, 165);
-  color: white;
-  padding: 5px 10px;
-  text-align: center;
-  font-size: 25px;
-  text-decoration: none;
-  font-family: Tahoma, sans-serif;
-  cursor: pointer;
-  border: none;
-  border-radius: 12px;
-  align-self: right;
+	display: inline-block;
+	background-color: rgb(230, 161, 165);
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 25px;
+	text-decoration: none;
+	font-family: Tahoma, sans-serif;
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
 }
 
 .BotonSec:hover {
-  background-color: rgb(204, 115, 120);
-  transform: scaleX(1.05);
+	background-color: rgb(204, 115, 120);
+	transform: scaleX(1.05);
 }
 
 .Contactos {
-  display: flex;
-  margin: 10px;
-  font-size: 16px;
-  list-style-type: none;
-  padding: 2px;
-  align-items: center;
-  justify-content: space-evenly;
+	display: flex;
+	margin: 10px;
+	font-size: 16px;
+	list-style-type: none;
+	padding: 2px;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .ContactosImg {
-  height: 20px;
-  width: auto;
-  padding: 0px 3px;
+	height: 20px;
+	width: auto;
+	padding: 0px 3px;
 }
 
 .Contactos li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .Contactos li a {
-  display: flex;
-  align-self: center;
-  text-decoration: none;
-  color: black;
+	display: flex;
+	align-self: center;
+	text-decoration: none;
+	color: black;
 }
 
 .ContenedorResenias {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
 }
 
 .Resenia {
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  margin: 15px;
-  width: 80vw;
-  background-color: rgb(232, 205, 175);
-  padding: 20px;
-  border-radius: 15px 50px;
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin: 18px;
+	width: 80vw;
+	background-color: rgb(232, 205, 175);
+	padding: 20px;
+	border-radius: 15px 50px;
+}
+
+.ContenedorEscrituraResenia {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	background-color: rgb(232, 205, 175);
+	width: 80vw;
+	gap: 2px;
+	margin-bottom: 25px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 15px 50px;
 }
 
 .ReseniaCliente {
-  width: 80vw;
-  height: 100px;
-  background-color: whitesmoke;
-  border: 8px solid antiquewhite;
-  font-family: 'Century Gothic', sans-serif;
-  text-align: left;
-  padding: 20px;
-  margin: 15px;
+	width: 60vw;
+	height: auto;
+	height: 75px;
+	font-size: 18px;
+	background-color: whitesmoke;
+	border: 4px solid rgb(217, 181, 143);
+	font-family: 'Century Gothic', sans-serif;
+	text-align: left;
+	padding: 10px;
+	margin: 8px;
+	resize: none;
+	border: 1.2px solid whitesmoke;
+	outline: none;
+}
+
+textarea::placeholder {
+	color: rgb(79, 66, 53);
+}
+
+/*El estilo de las etiquetas de input fue sacada de un tutorial de youtube*/
+.Entrada {
+	position: relative;
+	margin: 10px 0px;
+	background-color: whitesmoke;
+	border: 4px solid rgb(217, 181, 143);
+	border-radius: 10px;
+}
+
+.Entrada label {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	font-size: 18px;
+	padding: 0px 5px;
+	pointer-events: none;
+	transition: .5s;
+	font-family: 'Century Gothic', sans-serif;
+	color: rgb(79, 66, 53);
+}
+
+.Entrada input {
+	width: 320px;
+	height: 40px;
+	font-size: 18px;
+	background: transparent;
+	border: 1.2px solid #fff;
+	outline: none;
+	border-radius: 5px;
+	font-family: 'Century Gothic', sans-serif;
+}
+
+.Entrada input:focus~label,
+.Entrada input:valid~label {
+	top: 0;
+	font-size: 14px;
+	background: rgb(217, 181, 143);
+	border-radius: 5px;
+}
+
+.OrdenarEtiquetas {
+	display: flex;
+	gap: 30px;
+}
+
+.BotonPublicar {
+	background-color: rgb(230, 161, 165);
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	font-family: Tahoma, sans-serif;
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
+	width: 120px;
+}
+
+.BotonPublicar:hover {
+	background-color: rgb(204, 115, 120);
+	transform: scaleX(1.05);
+}
+
+.BotonCancelar {
+	background-color: rgb(179, 67, 73);
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	font-family: Tahoma, sans-serif;
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
+	width: 120px;
+}
+
+.BotonCancelar:hover {
+	background-color: rgb(156, 32, 38);
+	transform: scaleX(1.05);
+}
+
+.BotonesResenia {
+	display: flex;
+	gap: 25px;
+	margin: 8px 0px;
+}
+
+.avisoPublicacion {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background: #2e7d32;
+	color: #fff;
+	padding: 12px 20px;
+	border-radius: 8px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.4s ease;
+	font-size: 15px;
+	z-index: 9999;
+	font-family: Tahoma, sans-serif;
+}
+
+.avisoPublicacion.show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.avisoPublicacion.error {
+	background: #c62828;
 }
