@@ -54,3 +54,8 @@ inputBusqueda.addEventListener("input", () => {
     });
     document.dispatchEvent(evento);
 });
+
+document.getElementById('ordenar').addEventListener('click', () => {    //agregado para ordenar heladerias por nombre A-Z
+    const evento = new CustomEvent("ordenarPorNombreAscendente", { detail: "nombreAscendente", });
+    document.dispatchEvent(evento);
+});

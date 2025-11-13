@@ -123,3 +123,16 @@ function filtrarHeladerias(textoIngresado) {		//agregado para filtrar heladerias
 document.addEventListener("filtrarHeladerias", (evento) => {
 	filtrarHeladerias(evento.detail);
 });
+
+function ordenarHeladerias(tipoOrdenamiento) {		//agregado para ordenar heladerias por nombre A-Z
+	if (tipoOrdenamiento === "nombreAscendente") {
+		heladeriasFiltradas.sort((heladeria1, heladeria2) => heladeria1.nombre.localeCompare(heladeria2.nombre));
+	}
+	paginaActual = 1;
+	mostrarPagina(paginaActual);
+	crearBotonesPaginacion(heladeriasFiltradas.length);
+}
+
+document.addEventListener("ordenarPorNombreAscendente", (evento) => {
+	ordenarHeladerias(evento.detail);
+});
