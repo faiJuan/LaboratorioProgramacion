@@ -156,7 +156,6 @@ nav a input::placeholder {
 }
 
 .dropdown-menu {
-  /*display: none;*/
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -187,11 +186,9 @@ nav a input::placeholder {
 .dropdown-menu li a {
   display: block;
   font-weight: bold;
-  /*letra en negrita*/
 }
 
 .dropdown-menu.show {
-  /*display: block;*/
   opacity: 1;
   transform: translateY(0px);
   pointer-events: auto;

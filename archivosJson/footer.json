@@ -1,17 +1,17 @@
 [
-    {
-        "integrante": "Natalia",
-        "linkGit": "https://github.com/NataliaBNarvaez",
-        "fotoGit": "https://avatars.githubusercontent.com/u/102324463?v=4"
-    },
-    {
-        "integrante": "Juan",
-        "linkGit": "https://github.com/faiJuan",
-        "fotoGit": "https://avatars.githubusercontent.com/u/143299604?v=4"
-    },
-    {
-        "integrante": "Adriano",
-        "linkGit": "https://github.com/FAI-Adriano-G",
-        "fotoGit": "https://avatars.githubusercontent.com/u/226565709?v=4"
-    }
+  {
+    "integrante": "Natalia",
+    "linkGit": "https://github.com/NataliaBNarvaez",
+    "fotoGit": "https://avatars.githubusercontent.com/u/102324463?v=4"
+  },
+  {
+    "integrante": "Juan",
+    "linkGit": "https://github.com/faiJuan",
+    "fotoGit": "https://avatars.githubusercontent.com/u/143299604?v=4"
+  },
+  {
+    "integrante": "Adriano",
+    "linkGit": "https://github.com/FAI-Adriano-G",
+    "fotoGit": "https://avatars.githubusercontent.com/u/226565709?v=4"
+  }
 ]

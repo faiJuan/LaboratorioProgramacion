@@ -63,8 +63,8 @@ inputBusqueda.addEventListener("input", () => {
 });
 
 //agregado para el menu de ordenar
-const botonOrdenar = document.getElementById('ordenar');    //agregado esto para menu ordenar
-const menuOrdenar = document.querySelector('#o .dropdown-menu');    //agregado esto para menu ordenar
+const botonOrdenar = document.getElementById('ordenar');
+const menuOrdenar = document.querySelector('#o .dropdown-menu');
 
 botonOrdenar.addEventListener('click', (e) => {
     e.preventDefault(); //agrego esto porque no uso un boton, sino un vinculo, pero quiero que NO se comporte como tal
@@ -84,12 +84,12 @@ document.getElementById('ordenAZ').addEventListener('click', () => {    //agrega
     document.dispatchEvent(evento);
 });
 
-document.getElementById('ordenZA').addEventListener('click', () => {    //agregado para ordenar heladerias por nombre A-Z
+document.getElementById('ordenZA').addEventListener('click', () => {    //agregado para ordenar heladerias por nombre Z-A
     const evento = new CustomEvent("ordenarHeladerias", { detail: "nombreDescendente", });
     document.dispatchEvent(evento);
 });
 
-document.getElementById('ordenPuntuacion').addEventListener('click', () => {    //agregado para ordenar heladerias por nombre A-Z
+document.getElementById('ordenPuntuacion').addEventListener('click', () => {    //agregado para ordenar heladerias por su puntuacion, de mejor a peor
     const evento = new CustomEvent("ordenarHeladerias", { detail: "puntuacion", });
     document.dispatchEvent(evento);
 });
