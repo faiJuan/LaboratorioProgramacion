@@ -124,15 +124,24 @@ document.addEventListener("filtrarHeladerias", (evento) => {
 	filtrarHeladerias(evento.detail);
 });
 
-function ordenarHeladerias(tipoOrdenamiento) {		//agregado para ordenar heladerias por nombre A-Z
-	if (tipoOrdenamiento === "nombreAscendente") {
-		heladeriasFiltradas.sort((heladeria1, heladeria2) => heladeria1.nombre.localeCompare(heladeria2.nombre));
+function ordenarHeladerias(tipoOrdenamiento) {		//agregado para ordenar heladerias
+	switch (tipoOrdenamiento) {
+		case "nombreAscendente":
+			heladeriasFiltradas.sort((heladeria1, heladeria2) => heladeria1.nombre.localeCompare(heladeria2.nombre));
+			break;
+		case "nombreDescendente":
+			heladeriasFiltradas.sort((heladeria1, heladeria2) => heladeria2.nombre.localeCompare(heladeria1.nombre));
+			break;
+		case "puntuacion":
+			heladeriasFiltradas.sort((heladeria1, heladeria2) => parseFloat(calcularPuntuacion(heladeria2.resenias)) - parseFloat(calcularPuntuacion(heladeria1.resenias)));
+			break;
 	}
 	paginaActual = 1;
 	mostrarPagina(paginaActual);
 	crearBotonesPaginacion(heladeriasFiltradas.length);
 }
 
-document.addEventListener("ordenarPorNombreAscendente", (evento) => {
+document.addEventListener("ordenarHeladerias", (evento) => {
 	ordenarHeladerias(evento.detail);
 });
+

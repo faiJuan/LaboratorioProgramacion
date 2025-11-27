@@ -1,6 +1,7 @@
 const header = document.getElementById('header');
 const footer = document.getElementById('footer');
 
+// agregados en innerHTML: class="dropdown" y las opciones del menu entre <ul> y </ul>
 header.innerHTML = `
     <img class="Logo" src="./imagenes/logo.png" alt="logo" />
     <div class="Gelato">
@@ -12,7 +13,13 @@ header.innerHTML = `
             <li><a href="./index.html"><img class="ImagenCabecera" src="./imagenes/casa.svg" alt="inicio" />Inicio</a></li>
             <li id="b" class="search"><a id="busqueda"><img class="ImagenCabecera" src="./imagenes/lupa.svg" alt="buscar" />
                 <input type="text" placeholder="Buscar"></a></li>
-            <li id="o"><a id="ordenar"><img class="ImagenCabecera" src="./imagenes/filtro.svg" alt="filtrar" />Ordenar</a></li>
+            <li id="o" class="dropdown"><a id="ordenar"><img class="ImagenCabecera" src="./imagenes/filtro.svg" alt="filtrar" />Ordenar</a>
+                <ul class="dropdown-menu">
+                    <li><a id="ordenAZ">Orden A-Z</a></li>
+                    <li><a id="ordenZA">Orden Z-A</a></li>
+                    <li><a id="ordenPuntuacion">Mejor Puntuanción</a></li>
+                </ul>
+            </li>
             <li id="a"><a id="aleatorio"><img class="ImagenCabecera" src="./imagenes/star.png" alt="star" /></a></li>
         </ul>
     </nav>`;
@@ -55,7 +62,34 @@ inputBusqueda.addEventListener("input", () => {
     document.dispatchEvent(evento);
 });
 
-document.getElementById('ordenar').addEventListener('click', () => {    //agregado para ordenar heladerias por nombre A-Z
-    const evento = new CustomEvent("ordenarPorNombreAscendente", { detail: "nombreAscendente", });
+//agregado para el menu de ordenar
+const botonOrdenar = document.getElementById('ordenar');    //agregado esto para menu ordenar
+const menuOrdenar = document.querySelector('#o .dropdown-menu');    //agregado esto para menu ordenar
+
+botonOrdenar.addEventListener('click', (e) => {
+    e.preventDefault(); //agrego esto porque no uso un boton, sino un vinculo, pero quiero que NO se comporte como tal
+    menuOrdenar.classList.toggle('show');
+});
+
+botonOrdenar.addEventListener('click', (e) => {
+    if (!document.getElementById('o').contains(e.target)) {    //para cerrar el menu al hacer click fuera de ordenar
+        menuOrdenar.classList.remove('show');
+    }
+});
+
+// agregados para las opciones de ordenamiento de las heladerias a mostrar
+// cambio 'ordenar' por 'ordenAZ' segun lo agregado en el menu
+document.getElementById('ordenAZ').addEventListener('click', () => {    //agregado para ordenar heladerias por nombre A-Z
+    const evento = new CustomEvent("ordenarHeladerias", { detail: "nombreAscendente", });
+    document.dispatchEvent(evento);
+});
+
+document.getElementById('ordenZA').addEventListener('click', () => {    //agregado para ordenar heladerias por nombre A-Z
+    const evento = new CustomEvent("ordenarHeladerias", { detail: "nombreDescendente", });
+    document.dispatchEvent(evento);
+});
+
+document.getElementById('ordenPuntuacion').addEventListener('click', () => {    //agregado para ordenar heladerias por nombre A-Z
+    const evento = new CustomEvent("ordenarHeladerias", { detail: "puntuacion", });
     document.dispatchEvent(evento);
 });
