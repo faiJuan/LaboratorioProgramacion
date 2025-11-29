@@ -15,9 +15,10 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+//modificar con la correccion de juampi de / from=0 & limit=4
 app.get('/api/heladerias', (req, res) => {
 	const dataPath = path.join(__dirname, 'archivosJson/heladerias.json');
-	const data = fs.readFileSync(dataPath, 'utf8');
+	const data = fs.readFileSync(dataPath, 'utf8');  // CAMBIAR A ASINCRONICO - sacar sync en todo
 	res.json(JSON.parse(data));
 });
 
@@ -37,6 +38,7 @@ app.get('/api/footer', (req, res) => {
 	res.json(JSON.parse(data));
 });
 
+//agregar validacion
 app.post('/api/heladerias/:id/resenias', (req, res) => {
 	const heladeriaId = parseInt(req.params.id, 10);
 	const { nombre, descripcion, puntuacion } = req.body;
