@@ -1,19 +1,17 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const bodyParser = require('body-parser');
 const app = express();
 const PORT = 3000;
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
-
-app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 //modificar con la correccion de juampi de / from=0 & limit=4
 
@@ -51,7 +49,6 @@ app.get('/api/footer', (req, res) => {
 	res.json(JSON.parse(data));
 });
 
-//agregar validacion
 app.post('/api/heladerias/:id/resenias', (req, res) => {
 	const heladeriaId = parseInt(req.params.id, 10);
 	const { nombre, descripcion, puntuacion } = req.body;
@@ -64,20 +61,18 @@ app.post('/api/heladerias/:id/resenias', (req, res) => {
 	if (!heladeria) {
 		return res.status(404).json({ message: "Heladeria no encontrada" });
 	}
-	if (!nombre || !descripcion || isNaN(puntuacion)) {
+	if (!nombre || !descripcion || puntuacion === undefined || puntuacion === "" || isNaN(puntuacion) || puntuacion < 0 || puntuacion > 5) {
 		return res.status(400).json({ message: "Datos inválidos" });
 	}
-
 	const nuevaResenia = {
 		nombre,
 		descripcion,
 		puntuacion: parseInt(puntuacion)
 	};
-
 	heladeria.resenias.push(nuevaResenia);
 	fs.writeFileSync(dataPath, JSON.stringify(heladerias, null, 2));
 
-	res.status(201).json({ message: "Reseña guardada correctamente", resenia: nuevaResenia })
+	return res.status(201).json({ message: "Reseña guardada correctamente", resenia: nuevaResenia })
 });
 
 app.listen(PORT, () => {
