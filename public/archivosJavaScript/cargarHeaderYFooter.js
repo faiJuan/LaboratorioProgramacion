@@ -13,7 +13,7 @@ header.innerHTML = `
             <li><a href="./index.html"><img class="ImagenCabecera" src="./imagenes/casa.svg" alt="inicio" />Inicio</a></li>
             <li id="b" class="search"><a id="busqueda"><img class="ImagenCabecera" src="./imagenes/lupa.svg" alt="buscar" />
                 <input type="text" placeholder="Buscar"></a></li>
-            <li id="o" class="dropdown"><a id="ordenar"><img class="ImagenCabecera" src="./imagenes/filtro.svg" alt="filtrar" />Ordenar</a>
+            <li id="o" class="dropdown"><a id="ordenar"><img class="ImagenCabecera" src="./imagenes/ordenar.png" alt="ordenar" />Ordenar</a>
                 <ul class="dropdown-menu">
                     <li><a id="ordenAZ">Orden A-Z</a></li>
                     <li><a id="ordenZA">Orden Z-A</a></li>
