@@ -136,9 +136,8 @@ function calcularPuntuacion(resenias) {
 	return (result / resenias.length).toFixed(1);
 }
 
-
 //de aqui en adelante es la parte de ordenamiento, no funcionan ya que se realizo cuando
-//se pedia el json completo de datos. Queda pendiente para la entrega final
+//se pedia el json completo de datos. Queda pendiente para la entrega final 
 
 function filtrarHeladerias(textoIngresado) {		
 	textoIngresado = textoIngresado.toLowerCase().trim();
