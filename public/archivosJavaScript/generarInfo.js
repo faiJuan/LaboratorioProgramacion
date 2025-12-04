@@ -62,11 +62,11 @@ function cargarResenias(heladeria) {
 			</div>
 			<div class="OrdenarEtiquetas">
 				<div class="Entrada">	
-					<input type="text" id="nombre" name="nombre" required />	
+					<input type="text" id="nombre" name="nombre" required/>	
 					<label for="nombre">Nombre:</label>
 				</div>
 				<div class="Entrada">
-					<input type="number" id="puntuacion" name="puntuacion" min="0" max="5" required />	
+					<input type="number" id="puntuacion" name="puntuacion" min="0" max="5" required/>	
 					<label for="puntuacion">Puntuación:</label>
 				</div>
 			</div>
@@ -101,10 +101,9 @@ function cargarResenias(heladeria) {
 			});
 			if (!response.ok) throw new Error("Error al enviar la reseña");
 			const result = await response.json();
-
 			const nuevaResenia = document.createElement("p");
 			nuevaResenia.classList.add("Resenia");
-			nuevaResenia.innerHTML = `"${descripcion}"<br>— ${nombre}.<br>Puntuación: ${puntuacion} <img class="puntuacion" src="./imagenes/estrella.svg" alt="estrella"/>`;
+			nuevaResenia.innerHTML = `"${result.resenia.descripcion}"<br>— ${result.resenia.nombre}.<br>Puntuación: ${result.resenia.puntuacion} <img class="puntuacion" src="./imagenes/estrella.svg" alt="estrella"/>`;
 			lista.appendChild(nuevaResenia);
 
 			form.reset();
