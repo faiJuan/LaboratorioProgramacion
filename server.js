@@ -13,21 +13,13 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-//modificar con la correccion de juampi de / from=0 & limit=4
-
-/*app.get('/api/heladerias', (req, res) => {
-	const dataPath = path.join(__dirname, 'archivosJson/heladerias.json');
-	const data = fs.readFileSync(dataPath, 'utf8');  // CAMBIAR A ASINCRONICO - sacar sync en todo
-	res.json(JSON.parse(data));
-});*/
-
 app.get('/api/heladerias', (req, res) => {
 	const dataPath = path.join(__dirname, 'archivosJson/heladerias.json');
-	const data = fs.readFileSync(dataPath, 'utf8');  // CAMBIAR A ASINCRONICO - sacar sync en todo
+	const data = fs.readFileSync(dataPath, 'utf8');  // CAMBIAR A ASINCRONICO - pendiente para la entrega final
 	const pagina=parseInt(req.query.page);
-	const limit = parseInt(req.query.limit);
-	const inicio = (pagina - 1) * limit ;
-	const fin = pagina * limit ;
+	const limite = parseInt(req.query.limit);
+	const inicio = (pagina - 1) * limite ;
+	const fin = pagina * limite ;
 	const heladerias=JSON.parse(data);
 	const heladeriasPagina = heladerias.slice(inicio, fin);
 	res.json(heladeriasPagina);

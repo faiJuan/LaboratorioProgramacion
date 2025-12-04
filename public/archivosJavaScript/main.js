@@ -2,8 +2,6 @@ const contenedor = document.getElementById("principal");
 const paginacion = document.getElementById("paginacion");
 const HELADERIAS_POR_PAGINA = 4;
 let paginaActual = 1;
-let heladeriasGlobal = []; //para no mandar por parametro las heladerias
-let heladeriasFiltradas = [] //para guardar las heladerias que se deben mostrar segun coincidencia con el buscador
 
 
 	mostrarPagina2(paginaActual);
@@ -86,6 +84,8 @@ function crearBotonesPaginacion(totalHeladerias) {
 	paginacion.appendChild(btnSiguiente);
 }
 
+//Funcion anterior para mostrar la pagina, se utilizaba cuando pedia el json completo y no
+//una procion de elementos en cada pagina
 /*function mostrarPagina(pagina) {
 	contenedor.innerHTML = "";
 	const inicio = (pagina - 1) * HELADERIAS_POR_PAGINA;
@@ -118,9 +118,7 @@ function crearBotonesPaginacion(totalHeladerias) {
 	}
 }*/
 
-
-
-//Funcion para saber si la heladeria esta abierta o cerrada -- Hay que arreglar la carga de los horarios del json
+//queda pendiente encontrar una forma optima para cargar los horarios del json
 function estaAbierto(abre, cierra) {
 	let estado = "Cerrado";
 	if (new Date().getHours() >= abre && new Date().getHours() < cierra) {
@@ -138,7 +136,11 @@ function calcularPuntuacion(resenias) {
 	return (result / resenias.length).toFixed(1);
 }
 
-function filtrarHeladerias(textoIngresado) {		//agregado para filtrar heladerias
+
+//de aqui en adelante es la parte de ordenamiento, no funcionan ya que se realizo cuando
+//se pedia el json completo de datos. Queda pendiente para la entrega final
+
+function filtrarHeladerias(textoIngresado) {		
 	textoIngresado = textoIngresado.toLowerCase().trim();
 	if (textoIngresado === "") {
 		heladeriasFiltradas = heladeriasGlobal;
